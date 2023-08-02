@@ -1,0 +1,614 @@
+{
+    "name": "Agros Connect",
+    "authentication": {
+        "toast": {
+            "userReLogIn": "Usuario debe ingresar nuevamente.",
+            "noInternet": "No tienes conexión a internet para ingresar.",
+            "userOrPasswordIncorrect": "Usuario o contraseña incorrectos.",
+            "changePassword": "Problemas al cambiar la contraseña.",
+            "errorChangePassword": "Problemas al cambiar la contraseña.",
+            "errorRegister": "Problemas al registrar.",
+            "errorLogIn": "Problemas al iniciar sesión.",
+            "defaulltErrorMessage": "¡Ha ocurrido un error al reiniciar la contraseña!",
+            "defaulltErrorRememberMessage": "¡Ha ocurrido un error al reiniciar la contraseña!",
+            "pleaseEnterUser": "¡Ha ocurrido un error al reiniciar la contraseña!"
+        }
+    },
+    "biometricHistory": {
+        "toast": {
+            "errorLoadingTest": "Problemas al cargar las pruebas de vida.",
+            "errorAuthorization": "No se encuentra autorizado para acceder.",
+            "ErrorConnection": "Problemas de conexión, se cargaran las pruebas de vida locales."
+        }
+    },
+    "crop": {
+        "toast": {
+            "errorLoadingCrops": "Problemas al cargar los cultivos"
+        }
+    },
+    "internetConnection": {
+        "toast": {
+            "connectInternet": "Conectado a internet.",
+            "notInternet": "Rayos te encuentras sin conexión a internet"
+        }
+    },
+    "location": {
+        "department": {
+            "toast": {
+                "errorLoadingDepartments": "Problemas al cargar las departamentos."
+            }
+        },
+        "district": {
+            "toast": {
+                "errorLoadingDistrict": "Problemas al cargar las distritos."
+            }
+        },
+        "province": {
+            "toast": {
+                "errorLoadingProvince": "Problemas al cargar los provincias."
+            }
+        }
+    },
+    "offlineZone": {
+        "toast": {
+            "errorConnectionNetwork": "Conectate a internet para ver la lista de mapas a descargar.",
+            "errorAuthorization": "No se encuentra autorizado para acceder.",
+            "errorLoadingMap": "Problemas al cargar los mapas."
+        }
+    },
+    "organization": {
+        "toast": {
+            "errorLoadingRecord": "Problemas al cargar las fichas.",
+            "errorAuthorization": "No se encuentra autorizado para acceder.",
+            "errorLoadingMap": "Problemas al cargar los mapas."
+        }
+    },
+    "organizationForm": {
+        "toast": {
+            "errorConnection": "Problemas de conexión, se cargaran los formularios locales.",
+            "errorLoadingForm": "Problemas al cargar los formularios."
+        }
+    },
+    "preRegisterProducer": {
+        "toast": {
+            "errorLoadingProducts": "Problemas al cargar los productores pre registrados."
+        }
+    },
+    "product": {
+        "toast": {
+            "errorConnectionLocal": "Problemas de conexión, se cargaran los productores locales.",
+            "updatedProfile": "Perfil del productor actualizado",
+            "updatedSincronization": "¡Productor actualizado! Sincroniza con internet.",
+            "errorLoadingProducts": "Problemas al cargar los productores."
+        }
+    },
+    "productUnit": {
+        "toast": {
+            "errorRegisterUnitProduct": "Problemas al registrar la unidad productiva offline."
+        }
+    },
+    "profilePhoto": {
+        "toast": {
+            "errorLoadingProfilePhoto": "Problemas al cargar las fotos de perfil.",
+            "errorAuthorization": "No se encuentra autorizado para acceder.",
+            "errorConnection": "Problemas de conexión, se cargaran las fotos de perfil locales."
+        }
+    },
+    "registeredForm": {
+        "toast": {
+            "errorLoadingRegisterForm": "Problemas al cargar los formularios registrados."
+        }
+    },
+    "session": {
+        "toast": {
+            "errorLoadingSession": "Hubo un error al cargar su sesion, ingrese nuevamente."
+        }
+    },
+    "localStorage": {
+        "saveMemory": "Foto de perfil del productor guardada.",
+        "registerPhotoProfile": "Se registro la foto del perfil de productor."
+    },
+    "statusConnectionFormater": {
+        "connection": "Estado conexión: ",
+        "typeConnection": "Tipo de conexión: ",
+        "bad": "Mala",
+        "good": "Buena ",
+        "notConnection": "Se recomienda tener una conexión ",
+        "inconvenientSincronization": "para no tener inconvenientes en la sincronización.",
+        "half": "Media"
+    },
+    "widgets": {
+        "asyncAnimationButton": "Sincronizar",
+        "customAltitudeField": {
+            "errorGeolocalization": "Problemas al obtener la geolocalización."
+        }
+    },
+    "screen": {
+        "auth": {
+            "confirmResetPass": {
+                "errorResetPassword": "¡Ha ocurrido un error al reiniciar la contraseña!",
+                "enterUser": "Por favor ingresa el usuario",
+                "codVerification": "Código de verificación",
+                "passIncluide": "Asegúrese que la contraseña incluya:",
+                "enterCode": "Código de verificación",
+                "caracterMin": "• 8 caracteres como mínimo.",
+                "caracterValidate": "r'• Números, mayúsculas, minúsculas y caracteres especiales (+&/$...).'",
+                "hintUser": "Usuario",
+                "enterPassword": "Por favor ingresa la contraseña",
+                "initialSession": "Iniciar sesión",
+                "resendCode": "Reenviar código",
+                "changedPassword": "Cambiar contraseña",
+                "hintPassword": "Contraseña"
+            },
+            "forceChangePass": {
+                "firstInitialSession": "Por ser el primer inicio de sesión, cambie su contraseña y asegúrese que incluya:",
+                "caracterMin": "• 8 caracteres como mínimo.",
+                "caracterValidate": "r'• Números, mayúsculas, minúsculas y caracteres especiales (+&/$...).'",
+                "newPassword": "Nueva contraseña",
+                "enterPassword": "Por favor ingresa la contraseña",
+                "confirmPassword": "Confirme contraseña",
+                "matchPassword": "La contraseña no coincide",
+                "changedPassword": "Cambiar contraseña"
+            },
+            "login": {
+                "initialSession": "Iniciar sesión",
+                "logo": "Logo"
+            },
+            "loginSection": {
+                "user": "Usuario",
+                "password": "Contraseña",
+                "initialSession": "Iniciar sesión",
+                "enter": "Ingresar",
+                "enterUser": "Por favor ingresa el usuario",
+                "enterPassword": "Por favor ingresa la contraseña",
+                "rememberUser": "Recordar usuario",
+                "yourForgotPassword": "¿Olvidaste tu contraseña?",
+                "logo": "Logo"
+            },
+            "reLogin": {
+                "user": "Usuario",
+                "enterUser": "¿Ingresar con otro usuario?",
+                "initialSession": "Iniciar sesión",
+                "enterAgain": "Ingresar nuevamente",
+                "welcome": "Buen día agente,"
+            }
+        },
+        "biometricHist": {
+            "aboutToDo": "Estas a punto de realizar ",
+            "registerLifeTest": "el registro de prueba de vida",
+            "indicationInfo": ", no olvides leer las indicaciones detenidamente.",
+            "step1": "Paso 1 - Prueba de foto",
+            "title": "Prueba de vida",
+            "titleTwo": "Paso 2 - Prueba de video",
+            "next": "Siguiente",
+            "step1Content": "¡Listo! ahora toma una fotografía de la parte posterior del DNI del productor.",
+            "step1Front": "Paso 1 - Prueba de foto",
+            "step1ContentFront": "Toma una fotografía del DNI del productor enfocando la parte frontal.",
+            "indicationInformation": "Lea atentamente las siguientes indicaciones:",
+            "indicationInformationContent": "Empiece cuadrando el rostro del productor antes de iniciar la grabación",
+            "step3Info": "Asegúrate de ubicarte en un lugar con buena iluminación y que el productor no use lentes de sol, gorro o sombrero. ",
+            "step3InfoContent": "Tienes 10 segundos para realizar esta tarea.",
+            "step2Info": "Indíquele al productor que diga su nombre completo y la fecha del día, ejemplo: ",
+            "step2InfoContent": "Soy {} y hoy es ",
+            "failedMessage": "¡La prueba de vida ha sido registrada pero falló la sincronización, por favor sincronice más tarde!",
+            "errorSync": "¡Problemas al sincronizar la prueba de vida, por favor sincronice más tarde!",
+            "error": "¡Uy hubo un problema!",
+            "cancel": "Cancelar",
+            "back": "Atras",
+            "saveVideo": "Guardando 1 video y 2 fotos",
+            "canceledQuestion": "¿Deseas cancelar la sincronización?",
+            "canceledQuestionContent": "Si cancelas, ya no se sincronizará la información y tendrás que volver a hacerlo más adelante. ",
+            "canceledMessage": "¡La prueba de vida ha sido registrada pero se canceló la sincronización, por favor sincronice más tarde!",
+            "toast": {
+                "photoLoading": "La foto esta cargando..."
+            },
+            "dialog": {
+                "titleError": "¡Uy hubo un problema!",
+                "contentError": "Ha ocurrido un problema en la sincronización, inténtalo nuevamente mas tarde.",
+                "contentInfo": "Se ha guardado en tu dispositivo la prueba de vida, deberás conectarte a internet para sincronizarla.",
+                "titleGood": "¡Muy bien!",
+                "contentGood": "La prueba de vida se ha sincronizado correctamente.",
+                "buttonOk": "CONTINUAR",
+                "registerTestLife": "¿Está seguro de registrar la prueba de vida?",
+                "registerTestLifeContent": "Una vez registrada no podrá modificarla."
+            },
+            "lifeTest": "Pruebas de vida",
+            "lifeTestInfo": "Esta es la lista de las pruebas de vida que haz registrado. Recuerda que debes sincronizar las que tienes pendientes, aparecen en color naranja.",
+            "errorLoadingLifeTest": "Problemas al cargar a las pruebas de vida.",
+            "notLifeTest": "No hay pruebas de vida disponibles.",
+            "startSync": "Estas a punto de sincronizar todas las pruebas de vida registradas",
+            "notConnectionNetwork": "No tienes conexión a internet",
+            "notLifeTestPending": "No tiene pruebas de vida pendientes.",
+            "bySync": "Por sincronizar",
+            "continue": "CONTINUAR",
+            "helpers": {
+                "chips": {
+                    "bySync": "Por sincronizar",
+                    "refused": "Rechazado",
+                    "unverified": "Sin verificar",
+                    "toValidate": "Por validar",
+                    "validated": "Validado"
+                }
+            },
+            "screens": {
+                "rejected": {
+                    "lifeTest": "Prueba de vida",
+                    "accept": "Aceptar"
+                },
+                "sync": {
+                    "errorLifeTest": "¡Problemas al subir la prueba de vida del productor {}, por favor sincronice más tarde!",
+                    "errorUploadLifeTest": "¡Falló la subida de la prueba de vida del productor {}, por favor sincronice más tarde!",
+                    "errorCancelLifeTest": "¡Se canceló la subida de la prueba de vida del productor {}, por favor sincronice más tarde!",
+                    "stateConnection": "Rechazado",
+                    "loadingForm": "Cargando formularios...",
+                    "synchronization": "Sincronizando...",
+                    "initSync": "Iniciar sincronización",
+                    "cancel": "Cancelar",
+                    "accept": "Aceptar",
+                    "connectionNetwork": "No tienes conexión a internet",
+                    "wantSync": "¿Desea detener la sincronización de las pruebas de vida?"
+                }
+            },
+            "view": {
+                "totalSend": "Total enviados: {}",
+                "infoSync": "Las pruebas de vida han sido sincronizadas y ya se encuentran seguras en el panel de información de tu organización.",
+                "syncNotSuccess": "¡Sincronización no completada!",
+                "pendingLoading": "Pendiente: {}",
+                "sendLoading": "Enviados: {}",
+                "pendingInfo": "Hay pruebas de vida pendiente de sincronizar, asegúrese de realizar nuevamente la sincronización.",
+                "syncSuccess": "¡Sincronización exitosa!"
+            },
+            "widgets": {
+                "prodNotFound": "Productor no encontrado"
+            }
+        },
+        "home": {
+            "page": {
+                "productNew": "Productores nuevos",
+                "formRegister": "Formularios registrados",
+                "lifeTest": "Pruebas de vida",
+                "clearData": "Limpiar datos",
+                "okButtonText": "Limpiar",
+                "saveMap": "Mapas guardados",
+                "satellites": "Satélites",
+                "closeSession": "Cerrar sesión",
+                "listProducers": "Lista de productores",
+                "searchByDni": "Buscar por Nombres o DNI",
+                "errorLoadingProducers": "Problemas al cargar a los productores.",
+                "emptyProducers": "No se encontraron productores registrados",
+                "registerNewProducer": "Registrar nuevo productor",
+                "syncProducers": "Estas a punto de sincronizar a los productores",
+                "titleDialog": "¿Deseas limpiar los datos de la aplicación?",
+                "boldContentDialog": "Para volver a cargar la información deberás estar conectado a internet",
+                "contentDialog": "Antes asegúrese  de sincronizar todos los registros pendientes (formularios, pruebas de vida, etc), para evitar perder su información.",
+                "uploadFormToast": "Hay un formulario pendiente de subir.",
+                "uploadFormToastPending": "Hay {} formularios pendientes de subir.",
+                "synchronization": "Sincronizar",
+                "continue": "CONTINUAR",
+                "moduleSynchronize": "Modulo de sincronización",
+                "sync": {
+                    "dialog": "Estado de conexión",
+                    "synchronization": "Sincronizando...",
+                    "syncProduct": "Sincronizando {} productor de {}",
+                    "notNetwork": "No tienes conexión a internet",
+                    "syncRegister": "¿Desea detener la sincronización de los registros?",
+                    "initSync": "Iniciar sincronización de productores",
+                    "cancel": "Cancelar",
+                    "accept": "Aceptar",
+                    "loadingProducts": "Cargando productores..."
+                },
+                "toast": {
+                    "qrInvalidate": "QR inválido.",
+                    "cardRegistered": "La tarjeta no se encuentra registrada.",
+                    "errorNetwork": "No tienes conexión a internet",
+                    "prodRegistered": "No tiene registros pendientes.",
+                    "emptyRegistersPending": "No tiene registros pendientes.",
+                    "rqCodeError": "Problemas al escanear el código QR"
+                },
+                "item": {
+                    "numFormPending": "N° de formularios pendientes: {}",
+                    "numFormPendingZero": "N° de formularios pendientes: -"
+                },
+                "qr": {
+                    "description": "Enfoca el código QR que se encuentra en la tarjeta de identidad digital del productor, para dirigirte a su perfil de manera directa.",
+                    "numFormPendingZero": "N° de formularios pendientes: -"
+                }
+            }
+        },
+        "offlineZone": {
+            "downloadSuccess": "¡Descarga exitosa!",
+            "downloadCompleted": "¡Descarga no completada!",
+            "downloadMapOne": "Mapa descargado: 1",
+            "pendingMapOne": "Mapas pendientes: 1",
+            "deleteMap": "Eliminar mapas",
+            "savedMaps": "Mapas guardados",
+            "selectMapToDownload": "Selecciona mapa a descargar",
+            "savedMapsInfo": "Esta es la lista de mapas que tienes guardados en tu celular para poder usarlos cuando no tengas internet",
+            "emptyMaps": "No hay mapas descargados.",
+            "mapTest": "Mapa de prueba",
+            "dateCreated": "Fecha de creación: {}",
+            "errorLoadingMap": "Problemas al cargar los mapas.",
+            "mapOneInfo": "Hay 1 mapa pendiente de descargar, asegúrese de realizar nuevamente la descarga.",
+            "infoDownload": "La información ha sido descargada con éxito.",
+            "toast": {
+                "notNetwork": "Conéctate a internet para ver la lista de mapas a descargar.",
+                "getMap": "¿Desea detener la descarga de mapa?"
+            },
+            "downloadOffline": {
+                "loadingInfo": "Cargando mapa...",
+                "downloadInfo": "Descargando...",
+                "downloadOneMap": "Descargando 1 mapa",
+                "downloadInfoTime": "La descarga puede demorar hasta un minuto, no cerrar la aplicación hasta que termine.",
+                "hasMapLoaded": "Tiene 1 mapa por descargar",
+                "initDownloadMap": "Iniciar descarga de mapa",
+                "accept": "Aceptar",
+                "cancel": "Cancelar",
+                "toast": {
+                    "notNetwork": "No tienes conexión a internet",
+                    "getMap": "¿Desea detener la descarga de mapa?"
+                }
+            },
+            "widgets": {
+                "selectMap": "Selecciona el mapa que deseas descargar para usarlo cuando tu celular no cuente con internet.",
+                "selectOneMap": "Selecciona uno de los mapas.",
+                "map": "Mapas",
+                "select": "Seleccionar",
+                "notMapAviable": "No hay mapas disponibles, recargue la pantalla por favor.",
+                "cancel": "CANCELAR",
+                "download": "DESCARGAR",
+                "upload": "CARGAR",
+                "loadMap": "Para realizar esta acción debes cargar uno de los mapas que tienes guardado en tu celular ya que no tienes internet."
+            }
+        },
+        "preRegisterProducer": {
+            "infoPersonal": "Información personal",
+            "save": "Guardar",
+            "nameFieldOne": "1. Nombres (Obligatorio)",
+            "descriptionFieldOne": "Ingrese los primeros nombres del productor",
+            "nameFieldTwo": "2. Apellidos (Obligatorio)",
+            "descriptionFieldTwo": "Coloque el primer y segundo apellido del productor",
+            "nameFieldThree": "3. DNI (Obligatorio)",
+            "descriptionFieldThree": "Ingrese su número DNI",
+            "nameFieldFour": "4. Celular principal (Obligatorio)",
+            "nameFieldFive": "5. Fecha de nacimiento (Opcional)",
+            "nameFieldSix": "6. Operador (Opcional)",
+            "nameFieldSeven": "7. Celular secundario (Opcional)",
+            "nameFieldEight": "8. Número que usa WhatsApp (Completar solo si tiene) (Opcional)",
+            "nameFieldNine": "9. Tipo de celular (Botones, Táctil) (Opcional)",
+            "nameFieldTen": "10. Género (Opcional)",
+            "nameFieldEleven": "11. Dirección del productor (Centro poblado, Comunidad, etc.) (Opcional)",
+            "nameFieldTwelve": "12. Departamento (Opcional)",
+            "nameFieldThirteen": "13. Provincia (Opcional)",
+            "nameFieldFourteen": "14. Distrito (Opcional)",
+            "rejected": "Motivo de rechazo",
+            "agreed": "ENTENDIDO",
+            "returnUpdated": "Regresa a la pantalla anterior y actualiza tu lista de productores",
+            "returnUpdatedContent": "No vas a poder ver la información hasta que realice esta acción.",
+            "producerNew": "Productores nuevos",
+            "verifyProducer": "Verificación de productores",
+            "updatedProducer": "Para actualizar el estado haz click en el botón sincronizar.",
+            "emptyProducers": "No se encontraron productores registrados",
+            "producerNames": "Productor: {} {}",
+            "syncProducers": "Estas a punto de sincronizar los productores que acabas de crear",
+            "syncProducersContent": "Si es que los sincronizas ya no podrás agregar nuevas parcelas hasta que sean aprobados. Pero si podrás agregar formularios.",
+            "editRegister": "EDITAR EL REGISTRO",
+            "continue": "CONTINUAR",
+            "sync": "Sincronizar",
+            "syncLoading": "Sincronizando...",
+            "syncCurrent": "Sincronizando {} productor de {}",
+            "accept": "ACEPTAR",
+            "cancel": "CANCELAR",
+            "statusConnection": "Estado de conexión",
+            "loadingProducer": "Cargando productores...",
+            "initSync": "Iniciar sincronización de registros",
+            "stopSync": "¿Desea detener la sincronización de los registros?",
+            "syncSuccess": "¡Sincronización exitosa!",
+            "syncCompleted": "¡Sincronización no completada!",
+            "syncPending": "Registros pendientes: {}",
+            "registersSync": "Registros sincronizados: {}",
+            "finishSync": "Los registros han sido sincronizados.",
+            "infoPendingSend": "Hay información pendiente de enviar, asegúrese de realizar nuevamente la sincronización.",
+            "toast": {
+                "successProducer": "¡Guardado!\nSincroniza con internet",
+                "errorInfo": "Podrías perder toda la información ingresada.",
+                "errorSavedProducer": "Problemas al pre registrar al productor.",
+                "notNetwork": "No tienes conexión a internet",
+                "notHaveNetwork": "No tienes conexión a internet",
+                "errorUpdateRegister": "Problemas al actualizar el registro.",
+                "notRegisterPending": "Problemas al actualizar el registro."
+            },
+            "form": {
+                "selectOption": "Seleccione una opción",
+                "incorrectNumber": "Número incorrecto.",
+                "selectValue": "Número incorrecto.",
+                "searchCodeCOuntry": "Buscar por nombre de país o código.",
+                "errorNum": "El número previamente ingresado era incorrecto"
+            },
+            "create": {
+                "registerProduct": "Registrando productor...",
+                "mandatoryField": "El campo es obligatorio",
+                "successMessage": "¡Bien, acabas de terminar la primera parte!",
+                "successContent": "Ahora vas a llenar la información de unidad productiva.",
+                "completedFile": "¡Está listo, acabas de terminar de llenar la ficha de productor!",
+                "completedFileContent": "Una vez que des este paso ya no puedes editar la información.",
+                "registerProducer": "Registrar productor",
+                "infoPersonal": "Registrar productor",
+                "infoUnitProd": "Información Unidad productiva",
+                "pleaseEnterUser": "Por favor ingresa el nombre",
+                "pleaseEnterLastName": "Por favor ingresa el apellido",
+                "pleaseEnterDni": "Por favor ingresa el DNI",
+                "pleaseEnterPhone": "Por favor ingresa tu número celular.",
+                "incorrectPhone": "El número de celular incorrecto",
+                "incorrectWhatssap": "El número de whatsapp incorrecto",
+                "updateProducer": "Actualizando productor...",
+                "continue": "Siguiente"
+            }
+        },
+        "form": {
+            "formAvailable": "Formularios disponibles",
+            "proccessFile": "Procesando archivo...",
+            "initUploadFile": "Iniciando subida de archivo...",
+            "errorUploadFile": "Problemas al subir el archivo.",
+            "errorLoadFile": "Problemas al cargar el archivo.",
+            "fieldMandatory": "El campo es obligatorio",
+            "registerForm": "Registrar formulario",
+            "cancel": "CANCELAR",
+            "accept": "ACEPTAR",
+            "canceledFormRegister": "¡El formulario ha sido registrado pero se canceló la subida, por favor sincronice más tarde!",
+            "errorFormUpload": "¡El formulario ha sido registrado pero falló la subida, por favor sincronice más tarde!",
+            "errorFormSync": "¡Problemas al subir el formulario, por favor sincronice más tarde!",
+            "problemForm": "Problemas al cargar a los formularios.",
+            "dialog": {
+                "saveForm": "¿Desea guardar el formulario?",
+                "saveFormContent": "Una vez guardado, no se podrá realizar cambios.",
+                "loadingFinish": "Aún no se ha terminado de subir el formulario a la nube.",
+                "exit": "¿Está seguro de salir?",
+                "lostInfo": "¿Está seguro de salir?"
+            },
+            "toast": {
+                "photoLoading": "La foto esta cargando...",
+                "errorRegisterForm": "¡Problemas al registrar el formulario!",
+                "formRegisterSync": "Formulario registrado, por favor sincronice más tarde.",
+                "errorFormUpload": "¡Problemas al subir el formulario, por favor sincronice más tarde!",
+                "formUpLoadSuccess": "Formulario subido con éxito.",
+                "pendingSync": "Se encontraron productores por sincronizar, por lo que debe sincronizar el formulario más tarde.",
+                "problemForm": "¡Problemas al registrar el formulario!"
+            }
+        },
+        "personalData": {
+            "registerUnitProd": "Registrar unidad productiva",
+            "registerUnitProduct": "Registrar unidad productiva...",
+            "errorRegisterUnitProduct": "Problemas al pre registrar la unidad productiva.",
+            "infoPersonal": "Información personal",
+            "questionEditInfo": "¿Estás seguro que quieres editar la información personal?",
+            "questionEditInfoContent": "Editar ficha del productor",
+            "addProduc": "Añadir nueva unidad productiva",
+            "registerUnitProdSync": "Unidad productiva registrada, por favor sincronice más tarde.",
+            "finishFormProdContent": "Una vez que des este paso ya no puedes editar la información.",
+            "finishFormProd": "¡Está listo, acabas de terminar de llenar la ficha de unidad productiva!",
+            "editUnitProd": "Editar unidad productiva",
+            "editionUnitProd": "Edición unidad productiva",
+            "questionOne": "1. Nombre de parcela",
+            "questionTwo": "2. Área total de la unidad productiva en hectáreas",
+            "questionThree": "3. Tenencia de la unidad productiva",
+            "questionThreeV2": "3. Tenencia de la unidad productiva (Obligatorio)",
+            "questionFour": "4. Cultivo principal",
+            "questionFourV2": "4. Cultivo principal (Obligatorio)",
+            "questionFive": "5. Cultivo(s) secundario(s)(opcional) (Opción múltiple)",
+            "questionFiveV2": "5. Cultivo secundario",
+            "questionSix": "6. Capturar ubicación de ingreso",
+            "questionSeven": "7. Dibujar el Polígono",
+            "questionEight": "8. Dirección unidad productiva (Centro poblado, Comunidad, etc.)",
+            "questionNine": "9. Departamento (Opcional)",
+            "questionTen": "10. Provincia (Opcional)",
+            "questionEleven": "11. Distrito (Opcional)",
+            "fieldMandatory": "El campo es obligatorio",
+            "photoProducer": "Foto del productor",
+            "photoHead": "Toma la fotografía en un plano desde la cabeza hasta los hombros.",
+            "photoPersonal": "Recuerda que esta fotografía se mostrará a personas interesadas en conocer al productor, asegúrate que  sea una buena foto ;)",
+            "updatingUnitProd": "Actualizando unidad productiva...",
+            "takePhoto": "Tomar Foto",
+            "editProducer": "Editar productor",
+            "undProduct": "Unidad productiva",
+            "editUnitProduct": "¿Está seguro de editar la unidad productiva?",
+            "editUnitProductContent": "Editar unidad productiva",
+            "registerUnitProdInfo": "Información de unidad productiva",
+            "editFormProducer": "¡Está listo, acabas de terminar de editar la ficha de productor!",
+            "editFormProducerContent": "Puedes volver a editar la información en caso sea necesario.",
+            "register": "Registrar",
+            "toast": {
+                "errorUnitProd": "Problemas al registrar la unidad productiva.",
+                "errorEditUnitProd": "Problemas al editar la unidad productiva.",
+                "errorUpdateForm": "Problemas al actualizar la ficha del productor.",
+                "permission": "Por favor conceda permisos para continuar.",
+                "finishEdit": "¡Está listo, acabas de terminar de editar la ficha de unidad productiva!"
+            },
+            "dialog": {
+                "lostInfo": "Podrías perder toda la información ingresada."
+            },
+            "person": {
+                "qOne": "1. Nombres",
+                "qOneContent": "Ingrese los primeros nombres del productor",
+                "qTwo": "2. Apellidos",
+                "qTwoContent": "Coloque el primer y segundo apellido del productor",
+                "qThree": "3. DNI",
+                "qThreeContent": "Ingrese su número DNI",
+                "qFour": "4. Celular principal",
+                "qFourV2": "4. Celular principal (Obligatorio)",
+                "qFive": "5. Fecha de nacimiento",
+                "qFiveV2": "5. Fecha de nacimiento (Opcional)",
+                "qSix": "6. Operador",
+                "qSixV2": "6. Operador (Opcional)",
+                "qSeven": "7. Celular secundario",
+                "qSevenV2": "7. Celular secundario (Opcional)",
+                "qEight": "8. Número que usa WhatsApp",
+                "qEightV2": "8. Número que usa WhatsApp (Completar solo si tiene) (Opcional)",
+                "qNine": "9. Tipo de celular (Botones, Táctil)",
+                "qNineV2": "9. Tipo de celular (Botones, Táctil) (Opcional)",
+                "qTen": "10. Género",
+                "qTenV2": "10. Género (Opcional)",
+                "qEleven": "11. Dirección del productor (Centro poblado, Comunidad, etc.)",
+                "qElevenV2": "11. Dirección del productor (Centro poblado, Comunidad, etc.) (Opcional)",
+                "qTwelve": "12. Departamento (Opcional)",
+                "qThirteen": "13. Provincia (Opcional)",
+                "qFourteen": "14. Distrito (Opcional)"
+            }
+        },
+        "sync": {
+            "success": "¡Sincronización exitosa!",
+            "cancel": "CANCELAR",
+            "initForm": "Iniciar subida de formularios",
+            "accept": "ACEPTAR",
+            "forms": "Formularios",
+            "lifeTest": "Prueba de vida",
+            "fieldProducer": "Ficha del productor",
+            "pushHere": "Presiona aquí para tomar o cambiar la foto de perfil del productor.",
+            "register": "Registros",
+            "onWaiting": "En espera",
+            "bySync": "Por sincronizar",
+            "selectRegister": "Selecciona la opción de registro",
+            "upload": "Subiendo...",
+            "sendForm": "Enviando {} formulario de {}",
+            "loadingForm": "Cargando formularios...",
+            "notCompleted": "¡Sincronización no completada!",
+            "syncForm": "¿Desea detener la sincronización de los formulario?",
+            "formSend": "Formularios enviados: {}",
+            "formSendPending": "Formularios pendientes: {}",
+            "infoPending": "Hay información pendiente de enviar, asegúrese de realizar nuevamente la sincronización.",
+            "infoSend": "La información ha sido enviada con éxito y ya se encuentra segura en el panel de información de tu organización.",
+            "dialog": {
+                "statusConnection": "Estado de conexión",
+                "photoProfileInfo": "No se puede crear la foto del perfil de productor, este productor no se encuentra registrado actualmente.",
+                "photoInfo": "Antes de crear la foto de perfil del productor, asegúrate de estar conectado a internet. De lo contrario, captura la fotografía cuando tengas una conexión estable.",
+                "canceledUploadForm": "¡Se canceló la subida del formulario {} por favor sincronice más tarde!",
+                "failedUploadForm": "¡Falló la subida del formulario {} por favor sincronice más tarde!",
+                "errorUploadForm": "¡Problemas al subir el formulario {} por favor sincronice más tarde!"
+            },
+            "toast": {
+                "permission": "Por favor conceda permisos para continuar.",
+                "notNetwork": "No tienes conexión a internet"
+            }
+        },
+        "registerForm": {
+            "emptyFormRegistered": "No se encontraron formularios registrados",
+            "formRegistered": "Formularios registrados",
+            "producer": "Productor: ",
+            "form": "Formulario: ",
+            "dateRegister": "Fecha de registro: "
+        },
+        "satellites": {
+            "available": "Esta es la lista de satélites que tienes disponibles en tu ubicación.",
+            "availableContent": "Satélites disponibles",
+            "waiting": "Espere, los satélites se están cargando."
+        }
+    },
+    "dialog": {
+        "exit": "¿Está seguro de salir?",
+        "editMesssage": "¿Está seguro de editar su informacion personal?",
+        "accept": "ACEPTAR",
+        "cancel": "CANCELAR"
+    },
+    "finalText": {
+        "updatedProducer": "change information"
+    }
+}

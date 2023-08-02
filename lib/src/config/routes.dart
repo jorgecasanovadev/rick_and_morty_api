@@ -1,5 +1,24 @@
-import 'package:auto_route/auto_route.dart';
+part of 'routes_import.dart';
 
-part 'routes.gr.dart';
+@AutoRouterConfig(replaceInRouteName: 'Route')
+class Routes extends $Routes {
+  @override
+  RouteType get defaultRouteType => const RouteType.custom();
 
-@MaterialAutoRouter()
+  @override
+  final List<AutoRoute> routes = [
+    CustomRoute(
+      page: HomeScreenRoute.page,
+      path: '/',
+      transitionsBuilder: TransitionsBuilders.fadeIn,
+    ),
+    CustomRoute(
+      page: EpisodesScreenRoute.page,
+      transitionsBuilder: TransitionsBuilders.zoomIn,
+    ),
+    CustomRoute(
+      page: CharactersScreenRoute.page,
+      transitionsBuilder: TransitionsBuilders.slideLeftWithFade,
+    ),
+  ];
+}
