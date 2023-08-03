@@ -9,11 +9,11 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i4;
-import 'package:choppi_test/src/ui/screens/characters/characters_screen.dart'
+import 'package:choppi_test/src/ui/modules/characters/characters_screen.dart'
     as _i3;
-import 'package:choppi_test/src/ui/screens/episodes/episodes_screen.dart'
+import 'package:choppi_test/src/ui/modules/episodes/episodes_screen.dart'
     as _i2;
-import 'package:choppi_test/src/ui/screens/home/home_screen.dart' as _i1;
+import 'package:choppi_test/src/ui/modules/home/home_screen.dart' as _i1;
 
 abstract class $Routes extends _i4.RootStackRouter {
   $Routes({super.navigatorKey});

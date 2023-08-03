@@ -14,11 +14,11 @@ class Routes extends $Routes {
     ),
     CustomRoute(
       page: EpisodesScreenRoute.page,
-      transitionsBuilder: TransitionsBuilders.zoomIn,
+      transitionsBuilder: TransitionsBuilders.fadeIn,
     ),
     CustomRoute(
       page: CharactersScreenRoute.page,
-      transitionsBuilder: TransitionsBuilders.slideLeftWithFade,
+      transitionsBuilder: TransitionsBuilders.fadeIn,
     ),
   ];
 }

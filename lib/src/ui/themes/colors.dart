@@ -184,7 +184,7 @@ const Color black100 = Color(0xFF0F1419);
 const Color black38 = Colors.black38;
 const Color black = Colors.black;
 const Color blue500 = Color(0xff3600ff);
-const Color blueFacebook = Color.fromRGBO(66, 103, 178, 0.0);
+const Color blueFacebook = Color.fromRGBO(66, 103, 178, 0);
 const Color yellow100 = Color(0xffFEED00);
 const Color purple100 = Color(0xff8F00FF);
 
@@ -243,6 +243,41 @@ const Color grey300 = Color(0xff8f9287);
 const Color grey400 = Color.fromARGB(255, 81, 77, 77);
 const Color grey600 = Color(0xff4F4F4F);
 const Color grey700 = Color(0xffBDBDBD);
+
+//Rick and Morty Colors
+const Color rmBrown = Color(0xff44281D);
+const Color rmPale = Color(0xffE4A788);
+const Color rmYellow = Color(0xfff0E14A);
+const Color rmGreen = Color(0xff97CE4C);
+const Color rmPink = Color(0xffE89AC7);
+
+//Rick and Morty Colors Pallette
+const Color paletteYellow = Color(0xffFAFD7C);
+const Color paletteBrown = Color(0xff82491E);
+const Color paletteBlue = Color(0xff24325F);
+const Color paletteSkyblue = Color(0xffB7E4F9);
+const Color paletteRed = Color(0xffFB6467);
+const Color paletteGreen = Color(0xff526E2D);
+const Color palettePink = Color(0xffE762D7);
+const Color paletteOrange = Color(0xffE89242);
+const Color paletteLightYellow = Color(0xffFAE48B);
+const Color paletteSky = Color(0xffA6EEE6);
+const Color paletteSand = Color(0xff917C5D);
+const Color paletteDarkSkyblue = Color(0xff69C8EC);
+
+//Rick and Morty Colors Pallette - Alpha Colors
+Color alphaYellow = const Color(0xffFAFD7C).withOpacity(0.6);
+Color alphaBrown = const Color(0xff82491E).withOpacity(0.6);
+Color alphaBlue = const Color(0xff24325F).withOpacity(0.6);
+Color alphaSkyblue = const Color(0xffB7E4F9).withOpacity(0.6);
+Color alphaRed = const Color(0xffFB6467).withOpacity(0.6);
+Color alphaGreen = const Color(0xff526E2D).withOpacity(0.6);
+Color alphaPink = const Color(0xffE762D7).withOpacity(0.6);
+Color alphaOrange = const Color(0xffE89242).withOpacity(0.6);
+Color alphaLightYellow = const Color(0xffFAE48B).withOpacity(0.6);
+Color alphaSky = const Color(0xffA6EEE6).withOpacity(0.6);
+Color alphaSand = const Color(0xff917C5D).withOpacity(0.6);
+Color alphaDarkSkyblue = const Color(0xff69C8EC).withOpacity(0.6);
 
 class AppColors {
   static const Color callToAction = Color(0xffE91E63);
