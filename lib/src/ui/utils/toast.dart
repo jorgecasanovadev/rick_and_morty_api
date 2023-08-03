@@ -1,29 +1,39 @@
-import 'package:flutter/services.dart';
+import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
-extension StringExtension on String {
-  String capitalize() {
-    return "${this[0].toUpperCase()}${substring(1).toLowerCase()}";
-  }
-}
+import '../themes/themes.dart';
 
-class LowerCaseTextFormatter extends TextInputFormatter {
-  @override
-  TextEditingValue formatEditUpdate(
-      TextEditingValue oldValue, TextEditingValue newValue) {
-    return TextEditingValue(
-      text: newValue.text.toLowerCase(),
-      selection: newValue.selection,
+class ToastMessages {
+  static Future<bool?> showToast(
+    String message, {
+    Toast? toastLength = Toast.LENGTH_LONG,
+  }) {
+    return Fluttertoast.showToast(
+      msg: message,
+      toastLength: toastLength,
+      gravity: ToastGravity.BOTTOM,
     );
   }
-}
 
-class UpperCaseTextFormatter extends TextInputFormatter {
-  @override
-  TextEditingValue formatEditUpdate(
-      TextEditingValue oldValue, TextEditingValue newValue) {
-    return TextEditingValue(
-      text: newValue.text.toUpperCase(),
-      selection: newValue.selection,
+  static Future<bool?> showSuccess(String message) {
+    return Fluttertoast.showToast(
+      msg: message,
+      toastLength: Toast.LENGTH_LONG,
+      gravity: ToastGravity.BOTTOM,
+      backgroundColor: Colors.green[500],
+      textColor: Colors.white,
+      // fontSize: 16.0,
+    );
+  }
+
+  static Future<bool?> showError(String message) {
+    return Fluttertoast.showToast(
+      msg: message,
+      toastLength: Toast.LENGTH_LONG,
+      gravity: ToastGravity.BOTTOM,
+      backgroundColor: red,
+      textColor: Colors.white,
+      // fontSize: 16.0,
     );
   }
 }

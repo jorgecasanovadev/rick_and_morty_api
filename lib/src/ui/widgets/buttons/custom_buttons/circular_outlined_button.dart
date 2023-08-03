@@ -4,10 +4,10 @@ import '../../../themes/themes.dart';
 
 class CircularOutlinedButton extends StatelessWidget {
   const CircularOutlinedButton({
-    super.key,
     required this.onPressed,
     required this.text,
     this.enabled = true,
+    super.key,
   });
   final bool enabled;
   final VoidCallback? onPressed;

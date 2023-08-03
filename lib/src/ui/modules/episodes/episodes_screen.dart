@@ -28,7 +28,7 @@ class EpisodesScreen extends StatelessWidget {
                   style: TypographyStyle.h3.white,
                 ),
                 IconButton(
-                  onPressed: api.charactersList,
+                  onPressed: api.getEpisodes,
                   icon: const Icon(
                     Icons.data_object,
                     size: 50,

@@ -4,11 +4,11 @@ import '../../../themes/themes.dart';
 
 class CircularElevatedButton extends StatelessWidget {
   const CircularElevatedButton({
-    super.key,
     required this.onPressed,
     required this.startIcon,
     required this.endIcon,
     required this.text,
+    super.key,
   });
   final Icon startIcon;
   final Icon endIcon;

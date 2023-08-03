@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:choppi_test/src/data/network/failure_error_handler.dart';
+import 'package:choppi_test/src/data/network/failure_handler.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
@@ -22,8 +22,9 @@ class DioHandler {
       Response<dynamic> response;
       final headers = await _getHeaders();
       response = await dio
-          .getUri(
-            Uri.parse(basePath + url),
+          // ignore: inference_failure_on_function_invocation
+          .get(
+            basePath + url,
             options: Options(headers: headers),
           )
           .timeout(

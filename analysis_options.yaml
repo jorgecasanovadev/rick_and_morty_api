@@ -25,10 +25,8 @@ analyzer:
     # - lib/src/data/models/*.dart
     # - lib/src/data/models/utils/*.dart
     # - lib/src/data/network/*.dart
-    # - "**/*.g.dart"
-    # - "**/*.freezed.dart"
-    # - lib/ui/modules/characters/model/*.freezed.dart
-    # - lib/ui/modules/characters/model/*.g.dart
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
     - lib/src/configurations/routes_import.gr.dart
 
   strong-mode:

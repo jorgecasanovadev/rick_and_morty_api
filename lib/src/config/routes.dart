@@ -20,5 +20,9 @@ class Routes extends $Routes {
       page: CharactersScreenRoute.page,
       transitionsBuilder: TransitionsBuilders.fadeIn,
     ),
+    CustomRoute(
+      page: CharacterViewRoute.page,
+      transitionsBuilder: TransitionsBuilders.fadeIn,
+    ),
   ];
 }

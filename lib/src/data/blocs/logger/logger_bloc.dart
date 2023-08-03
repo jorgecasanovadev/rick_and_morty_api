@@ -5,7 +5,6 @@ import 'package:bloc/bloc.dart';
 import 'package:choppi_test/src/helpers/logger.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_logs/flutter_logs.dart';
-import 'package:intl/intl.dart';
 import 'package:path_provider/path_provider.dart';
 
 part 'logger_event.dart';
@@ -55,14 +54,16 @@ class LoggerBloc extends Bloc<LoggerEvent, LoggerState> {
           );
 
           Log.p.i('zipName: $zipName');
-          final date = DateFormat('yyyy-MM-dd')
-              .add_jm()
-              .format(DateTime.now())
-              .toLowerCase();
+          // final date = DateFormat('yyyy-MM-dd')
+          //     .add_jm()
+          //     .format(DateTime.now())
+          //     .toLowerCase();
           try {
             // unawaited(FlutterLogs.clearLogs());
           } catch (e) {
-            unawaited(FlutterLogs.logInfo(tag, 'export_log', e.toString()));
+            unawaited(
+              FlutterLogs.logInfo(tag, 'export_log', e.toString()),
+            );
           }
         } else {
           unawaited(

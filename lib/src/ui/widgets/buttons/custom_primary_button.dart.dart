@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class CustomPrimaryButton extends StatelessWidget {
   const CustomPrimaryButton({
-    super.key,
     required this.title,
     required this.onPressed,
     required this.foregroundColor,
@@ -11,6 +10,7 @@ class CustomPrimaryButton extends StatelessWidget {
     this.iconButton,
     this.hasShadow = true,
     this.hasIconButton = false,
+    super.key,
   });
 
   final String title;
@@ -30,16 +30,17 @@ class CustomPrimaryButton extends StatelessWidget {
       width: double.infinity,
       decoration: BoxDecoration(
         boxShadow: [
-          hasShadow
-              ? BoxShadow(
-                  color: backgroundColor.withOpacity(0.35),
-                  blurRadius: 10.0,
-                  offset: const Offset(0, 4),
-                )
-              : const BoxShadow(),
+          if (hasShadow)
+            BoxShadow(
+              color: backgroundColor.withOpacity(0.35),
+              blurRadius: 10,
+              offset: const Offset(0, 4),
+            )
+          else
+            const BoxShadow(),
         ],
         borderRadius: const BorderRadius.all(
-          Radius.circular(20.0),
+          Radius.circular(20),
         ),
       ),
       child: ElevatedButton(
@@ -52,19 +53,20 @@ class CustomPrimaryButton extends StatelessWidget {
           ),
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(
-              Radius.circular(20.0),
+              Radius.circular(20),
             ),
           ),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            hasIconButton
-                ? Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                    child: iconButton,
-                  )
-                : Container(),
+            if (hasIconButton)
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                child: iconButton,
+              )
+            else
+              Container(),
             Text(
               title,
               style: titleTextStyle,

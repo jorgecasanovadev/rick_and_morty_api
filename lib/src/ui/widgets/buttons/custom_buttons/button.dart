@@ -4,12 +4,12 @@ import '../../../themes/themes.dart';
 
 class ButtonWidget extends StatelessWidget {
   const ButtonWidget({
-    super.key,
     required this.onPressed,
     required this.label,
     this.isLoading = false,
     this.height = 50,
     this.fontSize = 18,
+    super.key,
   });
   final bool isLoading;
   final String label;

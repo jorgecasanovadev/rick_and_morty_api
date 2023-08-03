@@ -4,9 +4,9 @@ import '../../../themes/themes.dart';
 
 class RefreshButton extends StatelessWidget {
   const RefreshButton({
-    super.key,
     required this.title,
     required this.onPressed,
+    super.key,
   });
   final String title;
   final VoidCallback? onPressed;
