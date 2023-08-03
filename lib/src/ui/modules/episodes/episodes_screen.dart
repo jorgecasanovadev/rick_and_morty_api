@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:choppi_test/src/config/routes_import.gr.dart';
+import 'package:choppi_test/src/data/network/episodes_api.dart';
 import 'package:choppi_test/src/ui/themes/themes.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +10,7 @@ class EpisodesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final api = EpisodesApi();
     return Scaffold(
       backgroundColor: blue500,
       body: Center(
@@ -19,9 +21,20 @@ class EpisodesScreen extends StatelessWidget {
             onPressed: () => AutoRouter.of(context).push(
               const CharactersScreenRoute(),
             ),
-            child: Text(
-              'Characters Screen',
-              style: TypographyStyle.h3.white,
+            child: Column(
+              children: [
+                Text(
+                  'To Characters Screen',
+                  style: TypographyStyle.h3.white,
+                ),
+                IconButton(
+                  onPressed: api.charactersList,
+                  icon: const Icon(
+                    Icons.data_object,
+                    size: 50,
+                  ),
+                ),
+              ],
             ),
           ),
         ),

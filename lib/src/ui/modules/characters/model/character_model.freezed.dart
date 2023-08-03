@@ -20,7 +20,7 @@ CharacterModel _$CharacterModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$CharacterModel {
-  String? get id => throw _privateConstructorUsedError;
+  int? get id => throw _privateConstructorUsedError;
   String? get name => throw _privateConstructorUsedError;
   String? get status => throw _privateConstructorUsedError;
   String? get species => throw _privateConstructorUsedError;
@@ -43,7 +43,7 @@ abstract class $CharacterModelCopyWith<$Res> {
       _$CharacterModelCopyWithImpl<$Res, CharacterModel>;
   @useResult
   $Res call(
-      {String? id,
+      {int? id,
       String? name,
       String? status,
       String? species,
@@ -84,7 +84,7 @@ class _$CharacterModelCopyWithImpl<$Res, $Val extends CharacterModel>
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int?,
       name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -154,7 +154,7 @@ abstract class _$$_CharacterModelCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String? id,
+      {int? id,
       String? name,
       String? status,
       String? species,
@@ -195,7 +195,7 @@ class __$$_CharacterModelCopyWithImpl<$Res>
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int?,
       name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -250,7 +250,7 @@ class _$_CharacterModel implements _CharacterModel {
       _$$_CharacterModelFromJson(json);
 
   @override
-  final String? id;
+  final int? id;
   @override
   final String? name;
   @override
@@ -311,7 +311,7 @@ class _$_CharacterModel implements _CharacterModel {
 
 abstract class _CharacterModel implements CharacterModel {
   const factory _CharacterModel(
-      {final String? id,
+      {final int? id,
       final String? name,
       final String? status,
       final String? species,
@@ -325,7 +325,7 @@ abstract class _CharacterModel implements CharacterModel {
       _$_CharacterModel.fromJson;
 
   @override
-  String? get id;
+  int? get id;
   @override
   String? get name;
   @override

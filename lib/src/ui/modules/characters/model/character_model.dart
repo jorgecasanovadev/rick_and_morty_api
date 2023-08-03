@@ -6,7 +6,7 @@ part 'character_model.g.dart';
 @freezed
 class CharacterModel with _$CharacterModel {
   const factory CharacterModel({
-    String? id,
+    int? id,
     String? name,
     String? status,
     String? species,
