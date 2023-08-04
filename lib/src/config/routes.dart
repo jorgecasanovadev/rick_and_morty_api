@@ -14,14 +14,22 @@ class Routes extends $Routes {
     ),
     CustomRoute(
       page: EpisodesScreenRoute.page,
+      path: '/episodes',
+      transitionsBuilder: TransitionsBuilders.fadeIn,
+    ),
+    CustomRoute(
+      page: LocationScreenRoute.page,
+      path: '/locations',
       transitionsBuilder: TransitionsBuilders.fadeIn,
     ),
     CustomRoute(
       page: CharactersScreenRoute.page,
+      path: '/characters',
       transitionsBuilder: TransitionsBuilders.fadeIn,
     ),
     CustomRoute(
       page: CharacterViewRoute.page,
+      path: '/character',
       transitionsBuilder: TransitionsBuilders.fadeIn,
     ),
   ];

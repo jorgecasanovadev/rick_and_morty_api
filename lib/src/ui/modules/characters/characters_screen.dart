@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 @RoutePage()
 class CharactersScreen extends StatelessWidget {
   const CharactersScreen({super.key});
+  // static const name = '/characters';
 
   @override
   Widget build(BuildContext context) {

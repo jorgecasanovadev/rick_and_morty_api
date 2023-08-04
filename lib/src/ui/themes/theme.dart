@@ -57,6 +57,28 @@ extension BetterStyle on TextStyle {
   TextStyle get bluegrey => copyWith(color: Colors.blueGrey);
   TextStyle get bluegrey150 => copyWith(color: Colors.blueGrey.withAlpha(150));
 
+  //TextStyle R&M Colors
+  //Rick and Morty Colors
+  TextStyle get rmBrown => copyWith(color: const Color(0xff44281D));
+  TextStyle get rmPale => copyWith(color: const Color(0xffE4A788));
+  TextStyle get rmYellow => copyWith(color: const Color(0xfff0E14A));
+  TextStyle get rmGreen => copyWith(color: const Color(0xff97CE4C));
+  TextStyle get rmPink => copyWith(color: const Color(0xffE89AC7));
+
+//Rick and Morty Colors Pallette
+  TextStyle get paletteYellow => copyWith(color: const Color(0xffFAFD7C));
+  TextStyle get paletteBrown => copyWith(color: const Color(0xff82491E));
+  TextStyle get paletteBlue => copyWith(color: const Color(0xff24325F));
+  TextStyle get paletteSkyblue => copyWith(color: const Color(0xffB7E4F9));
+  TextStyle get paletteRed => copyWith(color: const Color(0xffFB6467));
+  TextStyle get paletteGreen => copyWith(color: const Color(0xff526E2D));
+  TextStyle get palettePink => copyWith(color: const Color(0xffE762D7));
+  TextStyle get paletteOrange => copyWith(color: const Color(0xffE89242));
+  TextStyle get paletteLightYellow => copyWith(color: const Color(0xffFAE48B));
+  TextStyle get paletteSky => copyWith(color: const Color(0xffA6EEE6));
+  TextStyle get paletteSand => copyWith(color: const Color(0xff917C5D));
+  TextStyle get paletteDarkSkyblue => copyWith(color: const Color(0xff69C8EC));
+
   TextStyle get w100 => copyWith(fontWeight: FontWeight.w100);
   TextStyle get w200 => copyWith(fontWeight: FontWeight.w200);
   TextStyle get w300 => copyWith(fontWeight: FontWeight.w300);
