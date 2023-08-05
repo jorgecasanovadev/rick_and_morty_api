@@ -121,7 +121,7 @@ ui/
 <img align="left" height="300em" width="250em" src="./screenshots/episodes_screen.png" alt="episodes-screen">
 
 - The episodes screen shows a list of the episodes of the tv-show. (Available to the Second Season)
-- "Coming soon": Each episode card redirects to a full info view of the same character. (To implemented)
+- Each episode card redirects to a full info view of the same character. ("Coming soon")
 ```
 ui/
 |- modules/
