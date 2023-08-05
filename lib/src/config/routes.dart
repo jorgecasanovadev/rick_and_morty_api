@@ -15,17 +15,17 @@ class Routes extends $Routes {
     CustomRoute(
       page: EpisodesScreenRoute.page,
       path: '/episodes',
-      transitionsBuilder: TransitionsBuilders.fadeIn,
+      transitionsBuilder: TransitionsBuilders.slideRight,
     ),
     CustomRoute(
       page: LocationScreenRoute.page,
       path: '/locations',
-      transitionsBuilder: TransitionsBuilders.slideRightWithFade,
+      transitionsBuilder: TransitionsBuilders.slideBottom,
     ),
     CustomRoute(
       page: CharactersScreenRoute.page,
       path: '/characters',
-      transitionsBuilder: TransitionsBuilders.slideLeftWithFade,
+      transitionsBuilder: TransitionsBuilders.slideLeft,
     ),
     CustomRoute(
       page: CharacterViewRoute.page,

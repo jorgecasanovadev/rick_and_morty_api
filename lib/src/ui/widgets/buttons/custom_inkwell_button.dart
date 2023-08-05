@@ -19,11 +19,11 @@ class CustomInkwellButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final media = MediaQuery.sizeOf(context);
     // const backgroundColor = transparent;
-    final backgroundColor = white.withOpacity(0.5);
-    const splashColor = paletteDarkSkyblue;
-    const borderColor = rmGreen;
-    // const textColor = white;
-    const textColor = paletteBlue;
+    final backgroundColor = white.withOpacity(0.1);
+    const splashColor = rmGreen;
+    const borderColor = paletteDarkSkyblue;
+    const textColor = rmGreen;
+    // const textColor = paletteBlue;
 
     return Material(
       elevation: 12,

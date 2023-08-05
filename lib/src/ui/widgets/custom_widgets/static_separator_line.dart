@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../themes/themes.dart';
+import '../../themes/themes.dart';
 
 class StaticSeparatorLine extends StatelessWidget {
   const StaticSeparatorLine({

@@ -1,7 +1,7 @@
 import 'package:choppi_test/src/ui/modules/characters/model/character_model.dart';
 import 'package:choppi_test/src/ui/themes/themes.dart';
 import 'package:choppi_test/src/ui/utils/input_formater.dart';
-import 'package:choppi_test/src/ui/widgets/static_separator_line.dart';
+import 'package:choppi_test/src/ui/widgets/custom_widgets/static_separator_line.dart';
 import 'package:flutter/material.dart';
 
 class CharacterCard extends StatelessWidget {
