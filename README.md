@@ -74,13 +74,19 @@ flutter packages pub run build_runner build --delete-conflicting-outputs
 
 <img align="right" src="./screenshots/home_screen.png" alt="home-screen">
 <p align="left" alt="home-screen-content">
-  Flutter provides a lot of flexibility in deciding how to organize and architect
-your apps. While this freedom is very valuable, it can also lead to apps with
-large classes, inconsistent naming schemes, as well as mismatching or missing
-architectures. These types of issues can make testing, maintaining, and extending
-your apps difficult.
+  - This is the first screen inside of the app.
+  - Redirected to Characters-Screen and Episodes-Screen.
 </p>
-<br>
+< align="right"```
+ui/
+|- login
+   |- login_screen.dart
+   |- widgets
+      |- login_form.dart
+      |- login_button.dart
+```>
+<hr align"center">
+
 
 #### Character Screen
 
@@ -92,7 +98,7 @@ large classes, inconsistent naming schemes, as well as mismatching or missing
 architectures. These types of issues can make testing, maintaining, and extending
 your apps difficult.
 </p>
-<br>
+<hr align"center">
 
 
 #### Episodes Screen
@@ -105,7 +111,7 @@ large classes, inconsistent naming schemes, as well as mismatching or missing
 architectures. These types of issues can make testing, maintaining, and extending
 your apps difficult.
 </p>
-<br>
+<hr align"center">
 
 
 This project is a starting point for a Flutter application.
