@@ -5,7 +5,7 @@ A new Flutter project.
 ## Getting Started
 
 > ## SDK Version
-```java
+```dart
 jorgecasanova ~ % flutter --version
 Flutter 3.10.5 • channel stable • https://github.com/flutter/flutter.git
 Framework • revision 796c8ef792 (8 weeks ago) • 2023-06-13 15:51:02 -0700
