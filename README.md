@@ -37,7 +37,7 @@ large classes, inconsistent naming schemes, as well as mismatching or missing
 architectures. These types of issues can make testing, maintaining, and extending
 your apps difficult.
 </p>
-
+<br>
 
 ### Character Screen
 
@@ -49,6 +49,7 @@ large classes, inconsistent naming schemes, as well as mismatching or missing
 architectures. These types of issues can make testing, maintaining, and extending
 your apps difficult.
 </p>
+<br>
 
 
 ### Episodes Screen
@@ -61,6 +62,8 @@ large classes, inconsistent naming schemes, as well as mismatching or missing
 architectures. These types of issues can make testing, maintaining, and extending
 your apps difficult.
 </p>
+<br>
+
 
 This project is a starting point for a Flutter application.
 
