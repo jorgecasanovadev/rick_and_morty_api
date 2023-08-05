@@ -6,7 +6,7 @@ We work using the API [The Rick and Morty API](https://rickandmortyapi.com/); us
 - [SDK Verion](https://github.com/jorgecasanovadev/rick_and_morty_api#sdk-version): SDK version
 - [How to use](https://github.com/jorgecasanovadev/rick_and_morty_api/tree/main#how-to-use): Initialize Rick and Morty API
 - [Libraries and Tools](https://github.com/jorgecasanovadev/rick_and_morty_api#libraries--tools-used): Libraries and tools used
-- [Screenshots](https://github.com/jorgecasanovadev/rick_and_morty_api/tree/main#how-to-use): Screenshots of the app views
+- [Screenshots](https://github.com/jorgecasanovadev/rick_and_morty_api/tree/main#screenshot-screens): Screenshots of the app views
 
 
 <hr align"center">
