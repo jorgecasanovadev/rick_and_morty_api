@@ -87,14 +87,25 @@ ui/
 
 #### Character Screen
 
-<img align="right" src="./screenshots/characters_screen.png" alt="characters-screen">
-<p align="left" alt="characters-screen-content">
-  Flutter provides a lot of flexibility in deciding how to organize and architect
-your apps. While this freedom is very valuable, it can also lead to apps with
-large classes, inconsistent naming schemes, as well as mismatching or missing
-architectures. These types of issues can make testing, maintaining, and extending
-your apps difficult.
-</p>
+<img align="left" height="250em" width="250em" src="./screenshots/characters_screen.png" alt="characters-screen">
+
+- The characters screen of the app shows a list of the characters of the tv-show.
+- Search field to search for a specific character.
+- Each character card redirect to a full info view of the same character.
+```
+ui/
+|- modules/
+   |- characters/
+      |- bloc/
+         |- character_bloc.dart
+         |- character_event.dart
+         |- character_state.dart
+      |- model/
+         |- character_model.dart
+      |- views/
+         |- character_view.dart
+      |- characters_screen.dart
+```
 <hr align"center">
 
 
