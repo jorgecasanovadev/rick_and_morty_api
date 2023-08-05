@@ -10,6 +10,7 @@ class EpisodeModel with _$EpisodeModel {
     String? name,
     String? air_date,
     String? episode,
+    String? url,
   }) = _EpisodeModel;
 
   factory EpisodeModel.fromJson(Map<String, dynamic> json) =>

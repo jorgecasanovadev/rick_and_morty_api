@@ -24,6 +24,7 @@ mixin _$EpisodeModel {
   String? get name => throw _privateConstructorUsedError;
   String? get air_date => throw _privateConstructorUsedError;
   String? get episode => throw _privateConstructorUsedError;
+  String? get url => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -37,7 +38,8 @@ abstract class $EpisodeModelCopyWith<$Res> {
           EpisodeModel value, $Res Function(EpisodeModel) then) =
       _$EpisodeModelCopyWithImpl<$Res, EpisodeModel>;
   @useResult
-  $Res call({int? id, String? name, String? air_date, String? episode});
+  $Res call(
+      {int? id, String? name, String? air_date, String? episode, String? url});
 }
 
 /// @nodoc
@@ -57,6 +59,7 @@ class _$EpisodeModelCopyWithImpl<$Res, $Val extends EpisodeModel>
     Object? name = freezed,
     Object? air_date = freezed,
     Object? episode = freezed,
+    Object? url = freezed,
   }) {
     return _then(_value.copyWith(
       id: freezed == id
@@ -75,6 +78,10 @@ class _$EpisodeModelCopyWithImpl<$Res, $Val extends EpisodeModel>
           ? _value.episode
           : episode // ignore: cast_nullable_to_non_nullable
               as String?,
+      url: freezed == url
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String?,
     ) as $Val);
   }
 }
@@ -87,7 +94,8 @@ abstract class _$$_EpisodeModelCopyWith<$Res>
       __$$_EpisodeModelCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({int? id, String? name, String? air_date, String? episode});
+  $Res call(
+      {int? id, String? name, String? air_date, String? episode, String? url});
 }
 
 /// @nodoc
@@ -105,6 +113,7 @@ class __$$_EpisodeModelCopyWithImpl<$Res>
     Object? name = freezed,
     Object? air_date = freezed,
     Object? episode = freezed,
+    Object? url = freezed,
   }) {
     return _then(_$_EpisodeModel(
       id: freezed == id
@@ -123,6 +132,10 @@ class __$$_EpisodeModelCopyWithImpl<$Res>
           ? _value.episode
           : episode // ignore: cast_nullable_to_non_nullable
               as String?,
+      url: freezed == url
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -130,7 +143,8 @@ class __$$_EpisodeModelCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_EpisodeModel implements _EpisodeModel {
-  const _$_EpisodeModel({this.id, this.name, this.air_date, this.episode});
+  const _$_EpisodeModel(
+      {this.id, this.name, this.air_date, this.episode, this.url});
 
   factory _$_EpisodeModel.fromJson(Map<String, dynamic> json) =>
       _$$_EpisodeModelFromJson(json);
@@ -143,10 +157,12 @@ class _$_EpisodeModel implements _EpisodeModel {
   final String? air_date;
   @override
   final String? episode;
+  @override
+  final String? url;
 
   @override
   String toString() {
-    return 'EpisodeModel(id: $id, name: $name, air_date: $air_date, episode: $episode)';
+    return 'EpisodeModel(id: $id, name: $name, air_date: $air_date, episode: $episode, url: $url)';
   }
 
   @override
@@ -158,12 +174,14 @@ class _$_EpisodeModel implements _EpisodeModel {
             (identical(other.name, name) || other.name == name) &&
             (identical(other.air_date, air_date) ||
                 other.air_date == air_date) &&
-            (identical(other.episode, episode) || other.episode == episode));
+            (identical(other.episode, episode) || other.episode == episode) &&
+            (identical(other.url, url) || other.url == url));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, id, name, air_date, episode);
+  int get hashCode =>
+      Object.hash(runtimeType, id, name, air_date, episode, url);
 
   @JsonKey(ignore: true)
   @override
@@ -184,7 +202,8 @@ abstract class _EpisodeModel implements EpisodeModel {
       {final int? id,
       final String? name,
       final String? air_date,
-      final String? episode}) = _$_EpisodeModel;
+      final String? episode,
+      final String? url}) = _$_EpisodeModel;
 
   factory _EpisodeModel.fromJson(Map<String, dynamic> json) =
       _$_EpisodeModel.fromJson;
@@ -197,6 +216,8 @@ abstract class _EpisodeModel implements EpisodeModel {
   String? get air_date;
   @override
   String? get episode;
+  @override
+  String? get url;
   @override
   @JsonKey(ignore: true)
   _$$_EpisodeModelCopyWith<_$_EpisodeModel> get copyWith =>

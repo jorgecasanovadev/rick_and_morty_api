@@ -18,7 +18,6 @@ class CharactersApi {
         for (final character in response as List)
           CharacterModel.fromJson(character)
       ];
-      log('lista de personajes: $resultModel');
       return resultModel;
     } on Failure catch (e) {
       log('Error ${e.statusCode}: ${e.message}');

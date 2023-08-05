@@ -1,34 +1,98 @@
-import 'package:bloc/bloc.dart';
+import 'dart:async';
 
-import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_logs/flutter_logs.dart';
 
+import '../../../../data/network/failure_handler.dart';
 import '../../../../data/repositories/remote/episode_remote.dart';
+import '../../../utils/toast.dart';
 import '../model/episode_model.dart';
 
-part 'episode_bloc.freezed.dart';
 part 'episode_event.dart';
 part 'episode_state.dart';
 
 class EpisodeBloc extends Bloc<EpisodeEvent, EpisodeState> {
-  EpisodeBloc() : super(EpisodeState) {
-    final episodeApi = EpisodeRemoteRepository();
+  EpisodeBloc() : super(const EpisodeState()) {
+    on<EpisodeEvent>((event, emit) {});
 
-    on<EpisodeLoading>((event, emit) async {
-      emit(EpisodeState.loading());
-      // ignore: inference_failure_on_instance_creation
-      await Future.delayed(const Duration(milliseconds: 800));
+    on<OnToggleLoadingEpisodeEvent>((event, emit) {
+      if (state.isEpisodesLoading != event.isEpisodesLoading) {
+        emit(state.copyWith(isEpisodesLoading: event.isEpisodesLoading));
+      }
     });
-    on<EpisodeFailed>(
-      (event, emit) => emit(EpisodeState.failed()),
-    );
-    on<EpisodeLoaded>(
-      (event, emit) async {
-        if (state is EpisodeLoaded) {
-          emit(EpisodeLoading);
-          final episodes = await episodeApi.getEpisodes();
-          emit(EpisodeState.loaded(episodes: episodes));
-        }
-      },
-    );
+
+    on<OnLoadEpisodeEvent>((event, emit) {
+      emit(
+        state.copyWith(
+          isEpisodesLoading: false,
+          hasErrorLoadingEpisodes: false,
+          episodes: [...event.episodes],
+        ),
+      );
+    });
+
+    on<OnErrorLoadingEpisodeEvent>((event, emit) {
+      emit(
+        state.copyWith(
+          hasErrorLoadingEpisodes: true,
+          isEpisodesLoading: false,
+        ),
+      );
+    });
+  }
+
+  final apiRemote = EpisodeRemoteRepository();
+
+  Future<void> loadEpisodes() async {
+    add(const OnToggleLoadingEpisodeEvent(isEpisodesLoading: true));
+    final episodes = <EpisodeModel>[];
+    try {
+      // if (internetConnectionBloc.state.isActive) {
+      episodes.addAll(await apiRemote.getEpisodes());
+      add(OnLoadEpisodeEvent(episodes: episodes));
+      // } else {
+      // unawaited(
+      // ToastMessages.showError('No cuenta con conexión a internet'),
+      // );
+      // }
+    } on Failure catch (e) {
+      unawaited(
+        FlutterLogs.logThis(
+          tag: 'episode_api',
+          subTag: 'error',
+          logMessage: e.toString(),
+        ),
+      );
+      switch (e.statusCode) {
+        case 408:
+          unawaited(
+            ToastMessages.showToast(
+              'Problemas de conexión, tiempo de espera excedido',
+            ),
+          );
+        case 401:
+          unawaited(
+            ToastMessages.showToast('No se encuentra autorizado para acceder.'),
+          );
+        default:
+          add(const OnErrorLoadingEpisodeEvent());
+      }
+    } catch (e) {
+      unawaited(
+        FlutterLogs.logThis(
+          tag: 'episode_api',
+          subTag: 'error',
+          logMessage: e.toString(),
+          level: LogLevel.ERROR,
+        ),
+      );
+      add(const OnErrorLoadingEpisodeEvent());
+      unawaited(
+        ToastMessages.showToast('Error al cargar los episodios'),
+      );
+    } finally {
+      add(const OnToggleLoadingEpisodeEvent(isEpisodesLoading: false));
+    }
   }
 }

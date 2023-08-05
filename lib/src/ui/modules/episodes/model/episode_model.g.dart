@@ -12,6 +12,7 @@ _$_EpisodeModel _$$_EpisodeModelFromJson(Map<String, dynamic> json) =>
       name: json['name'] as String?,
       air_date: json['air_date'] as String?,
       episode: json['episode'] as String?,
+      url: json['url'] as String?,
     );
 
 Map<String, dynamic> _$$_EpisodeModelToJson(_$_EpisodeModel instance) =>
@@ -20,4 +21,5 @@ Map<String, dynamic> _$$_EpisodeModelToJson(_$_EpisodeModel instance) =>
       'name': instance.name,
       'air_date': instance.air_date,
       'episode': instance.episode,
+      'url': instance.url,
     };

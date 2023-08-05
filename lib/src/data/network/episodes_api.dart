@@ -17,7 +17,6 @@ class EpisodesApi {
       final resultModel = <EpisodeModel>[
         for (final episode in response as List) EpisodeModel.fromJson(episode)
       ];
-      log('lista de episodios: $resultModel');
       return resultModel;
     } on Failure catch (e) {
       log('Error ${e.statusCode}: ${e.message}');

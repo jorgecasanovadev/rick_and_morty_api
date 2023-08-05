@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../themes/themes.dart';
 
-class CustomTitleLogo extends StatelessWidget {
-  const CustomTitleLogo({super.key});
+class TitleLogo extends StatelessWidget {
+  const TitleLogo({super.key});
 
   @override
   Widget build(BuildContext context) {

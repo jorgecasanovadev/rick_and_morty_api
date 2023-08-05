@@ -1,57 +1,55 @@
 import 'package:flutter/material.dart';
 
-import '../../../themes/themes.dart';
+import '../../themes/themes.dart';
 
-class MaterialContainerMenu extends StatelessWidget {
-  const MaterialContainerMenu({
+class CustomInkwellButton extends StatelessWidget {
+  const CustomInkwellButton({
     required this.title,
     required this.image,
     required this.onTap,
     this.isMirror = false,
-    this.isRounded = false,
     super.key,
   });
   final String title;
   final String image;
   final bool isMirror;
-  final bool isRounded;
   final void Function() onTap;
 
   @override
   Widget build(BuildContext context) {
     final media = MediaQuery.sizeOf(context);
+    // const backgroundColor = transparent;
+    final backgroundColor = white.withOpacity(0.5);
+    const splashColor = paletteDarkSkyblue;
+    const borderColor = rmGreen;
+    // const textColor = white;
+    const textColor = paletteBlue;
 
     return Material(
       elevation: 12,
-      shadowColor: grey200.withOpacity(0.8),
+      shadowColor: white.withOpacity(0.1),
+      color: backgroundColor,
       animationDuration: const Duration(milliseconds: 500),
-      borderRadius: !isRounded
-          ? !isMirror
-              ? const BorderRadius.only(
-                  bottomLeft: Radius.circular(25),
-                  topRight: Radius.circular(25),
-                )
-              : const BorderRadius.only(
-                  topLeft: Radius.circular(25),
-                  bottomRight: Radius.circular(25),
-                )
-          : const BorderRadius.all(
-              Radius.circular(25),
+      borderRadius: !isMirror
+          ? const BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              topRight: Radius.circular(25),
+            )
+          : const BorderRadius.only(
+              topLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
             ),
       child: InkWell(
-        splashColor: paletteGreen,
-        borderRadius: !isRounded
-            ? !isMirror
-                ? const BorderRadius.only(
-                    bottomLeft: Radius.circular(25),
-                    topRight: Radius.circular(25),
-                  )
-                : const BorderRadius.only(
-                    topLeft: Radius.circular(25),
-                    bottomRight: Radius.circular(25),
-                  )
-            : const BorderRadius.all(
-                Radius.circular(25),
+        highlightColor: borderColor.withOpacity(0.8),
+        splashColor: splashColor,
+        borderRadius: !isMirror
+            ? const BorderRadius.only(
+                bottomLeft: Radius.circular(25),
+                topRight: Radius.circular(25),
+              )
+            : const BorderRadius.only(
+                topLeft: Radius.circular(25),
+                bottomRight: Radius.circular(25),
               ),
         onTap: onTap,
         child: Container(
@@ -59,28 +57,27 @@ class MaterialContainerMenu extends StatelessWidget {
           height: 100,
           width: media.width * 0.8,
           decoration: BoxDecoration(
-            color: paletteDarkSkyblue.withOpacity(0.8),
-            borderRadius: !isRounded
-                ? !isMirror
-                    ? const BorderRadius.only(
-                        bottomLeft: Radius.circular(25),
-                        topRight: Radius.circular(25),
-                      )
-                    : const BorderRadius.only(
-                        topLeft: Radius.circular(25),
-                        bottomRight: Radius.circular(25),
-                      )
-                : const BorderRadius.all(
-                    Radius.circular(25),
+            // color: paletteDarkSkyblue.withOpacity(0.8),
+            color: backgroundColor,
+            border: Border.all(
+              color: borderColor.withOpacity(0.8),
+              width: 3,
+            ),
+            borderRadius: !isMirror
+                ? const BorderRadius.only(
+                    bottomLeft: Radius.circular(25),
+                    topRight: Radius.circular(25),
+                  )
+                : const BorderRadius.only(
+                    topLeft: Radius.circular(25),
+                    bottomRight: Radius.circular(25),
                   ),
           ),
           child: Padding(
             padding: const EdgeInsets.only(right: 8),
             child: !isMirror
                 ? Row(
-                    mainAxisAlignment: !isRounded
-                        ? MainAxisAlignment.end
-                        : MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Align(
                         alignment: Alignment.centerLeft,
@@ -89,47 +86,46 @@ class MaterialContainerMenu extends StatelessWidget {
                           fit: BoxFit.cover,
                         ),
                       ),
-                      if (!isRounded) const Spacer(),
+                      const Spacer(),
                       Align(
                         alignment: Alignment.centerRight,
                         child: Material(
-                          elevation: 12,
+                          elevation: 25,
                           color: transparent,
+                          shadowColor: textColor.withOpacity(0.4),
                           child: Text(
                             title,
-                            style: TypographyStyle.h4.rmGreen.copyWith(
+                            style: TypographyStyle.h4.copyWith(
                               fontFamily: 'Schwifty',
                               fontSize: 35,
+                              color: textColor,
                             ),
                           ),
                         ),
                       ),
                       const SizedBox(width: 5),
-                      if (!isRounded)
-                        Material(
-                          elevation: 15,
-                          color: transparent,
-                          borderRadius: BorderRadius.circular(20),
-                          child: const Icon(
-                            Icons.arrow_right_outlined,
-                            color: rmGreen,
-                            size: 35,
-                          ),
+                      Material(
+                        elevation: 15,
+                        color: transparent,
+                        borderRadius: BorderRadius.circular(20),
+                        child: const Icon(
+                          Icons.arrow_right_outlined,
+                          color: textColor,
+                          size: 35,
                         ),
+                      ),
                     ],
                   )
                 : Row(
-                    mainAxisAlignment: !isRounded
-                        ? MainAxisAlignment.end
-                        : MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Material(
-                        elevation: 12,
+                        elevation: 15,
                         color: transparent,
                         borderRadius: BorderRadius.circular(20),
                         child: const Icon(
                           Icons.arrow_left_outlined,
-                          color: rmGreen,
+                          color: textColor,
                           size: 35,
                         ),
                       ),
@@ -139,11 +135,13 @@ class MaterialContainerMenu extends StatelessWidget {
                         child: Material(
                           elevation: 25,
                           color: transparent,
+                          shadowColor: textColor.withOpacity(0.4),
                           child: Text(
                             title,
-                            style: TypographyStyle.h4.rmGreen.copyWith(
+                            style: TypographyStyle.h4.copyWith(
                               fontFamily: 'Schwifty',
                               fontSize: 35,
+                              color: textColor,
                             ),
                           ),
                         ),

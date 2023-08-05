@@ -20,17 +20,16 @@ class Routes extends $Routes {
     CustomRoute(
       page: LocationScreenRoute.page,
       path: '/locations',
-      transitionsBuilder: TransitionsBuilders.fadeIn,
+      transitionsBuilder: TransitionsBuilders.slideRightWithFade,
     ),
     CustomRoute(
       page: CharactersScreenRoute.page,
       path: '/characters',
-      transitionsBuilder: TransitionsBuilders.fadeIn,
+      transitionsBuilder: TransitionsBuilders.slideLeftWithFade,
     ),
     CustomRoute(
       page: CharacterViewRoute.page,
-      path: '/character',
-      transitionsBuilder: TransitionsBuilders.fadeIn,
+      transitionsBuilder: TransitionsBuilders.slideLeftWithFade,
     ),
   ];
 }
