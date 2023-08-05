@@ -33,6 +33,19 @@ Doctor summary (to see all details, run flutter doctor -v):
 • No issues found!
 ```
 
+> Screenshot Screens
+### Home Screen
+
+![Screenshots on Android and iOS](./screenshots/home_screen.png)
+
+### Character Screen
+
+![Screenshots on Android and iOS](./screenshots/characters_screen.png)
+
+### Episodes Screen
+
+![Screenshots on Android and iOS](./screenshots/episodes_screen.png)
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
