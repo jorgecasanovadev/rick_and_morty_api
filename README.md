@@ -1,4 +1,4 @@
-# choppi_test
+# Rick and Morty - API
 
 A new Flutter project.
 
