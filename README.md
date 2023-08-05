@@ -78,8 +78,8 @@ flutter packages pub run build_runner build --delete-conflicting-outputs
 
 ```
 ui/
-|- modules
-   |- home
+|- modules/
+   |- home/
       |- home_screen.dart
 ```
 <hr align"center">
