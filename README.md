@@ -1,5 +1,6 @@
 # Rick and Morty - API
-The Boilerplate contains the minimal implementation required to create a new library or project. The repository code is preloaded with some basic components like basic app architecture, app theme, constants and required dependencies to create a new project. By using boiler plate code as standard initializer, we can ha
+Flutter's application about the show, Rick and Morty; the application has 2 core views, characters, and episodes of the television show.
+We work using the API https://rickandmortyapi.com/; using clean architecture, state management with Bloc State, and automatic code generation using libraries such as Freezed and Json Serializable
 
 > ## Getting Started
 - [SDK Verion](https://github.com/jorgecasanovadev/rick_and_morty_api#sdk-version): SDK version
@@ -139,8 +140,8 @@ ui/
 <br>
 
 
+> ### Getting started with Flutter
 This project is a starting point for a Flutter application.
-
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
