@@ -8,12 +8,9 @@ The Boilerplate contains the minimal implementation required to create a new lib
 
 **Step 1: 🧑🏻‍💻**
 - Download or clone this repo by using the link below:
-
-SSH:
 ```
 git@github.com:jorgecasanovadev/rick_and_morty_api.git
 ```
-HTTPS:
 ```
 https://github.com/jorgecasanovadev/rick_and_morty_api.git
 ```
