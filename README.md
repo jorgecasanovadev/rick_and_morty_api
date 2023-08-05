@@ -72,17 +72,16 @@ flutter packages pub run build_runner build --delete-conflicting-outputs
 > ### Screenshot Screens
 #### Home Screen
 
+<img align="left" height="250em" width="250em" src="./screenshots/home_screen.png" alt="home-screen">
+
 - This is the first screen inside of the app.
 - Redirected to Characters-Screen and Episodes-Screen.
-
 ```
 ui/
 |- modules/
    |- home/
       |- home_screen.dart
 ```
-<img align="right" height="200em" width="200em" src="./screenshots/home_screen.png" alt="home-screen">
-
 <hr align"center">
 
 
