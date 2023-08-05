@@ -83,6 +83,8 @@ ui/
       |- home_screen.dart
 ```
 <br>
+<br>
+<br>
 <hr align"center">
 <br>
 
@@ -109,7 +111,6 @@ ui/
          |- character_view.dart
       |- characters_screen.dart
 ```
-<br>
 <hr align"center">
 <br>
 
@@ -134,7 +135,6 @@ ui/
          |- episode_card.dart
       |- characters_screen.dart
 ```
-<br>
 <hr align"center">
 <br>
 
