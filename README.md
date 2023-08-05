@@ -77,14 +77,12 @@ flutter packages pub run build_runner build --delete-conflicting-outputs
   - This is the first screen inside of the app.
   - Redirected to Characters-Screen and Episodes-Screen.
 </p>
-< align="right"```
+```
 ui/
-|- login
-   |- login_screen.dart
-   |- widgets
-      |- login_form.dart
-      |- login_button.dart
-```>
+|- modules
+   |- home
+      |- home_screen.dart
+```
 <hr align"center">
 
 
