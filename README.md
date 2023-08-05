@@ -1,6 +1,6 @@
 # Rick and Morty - API
 Flutter's application about the show, Rick and Morty; the application has 2 core views, characters, and episodes of the television show.
-We work using the API https://rickandmortyapi.com/; using clean architecture, state management with Bloc State, and automatic code generation using libraries such as Freezed and Json Serializable
+We work using the API [RICK AND MORTY - API](https://rickandmortyapi.com/); using clean architecture, state management with Bloc State, and automatic code generation using libraries such as Freezed and Json Serializable
 
 > ## Getting Started
 - [SDK Verion](https://github.com/jorgecasanovadev/rick_and_morty_api#sdk-version): SDK version
