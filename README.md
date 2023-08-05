@@ -72,7 +72,7 @@ flutter packages pub run build_runner build --delete-conflicting-outputs
 > ### Screenshot Screens
 #### Home Screen
 
-<img align="left" height="250em" width="250em" src="./screenshots/home_screen.png" alt="home-screen">
+<img align="left" height="300em" width="250em" src="./screenshots/home_screen.png" alt="home-screen">
 
 - This is the first screen inside of the app.
 - Redirected to Characters-Screen and Episodes-Screen.
@@ -82,14 +82,13 @@ ui/
    |- home/
       |- home_screen.dart
 ```
-<br>
 <hr align"center">
 <br>
 
 
 #### Character Screen
 
-<img align="left" height="250em" width="250em" src="./screenshots/characters_screen.png" alt="characters-screen">
+<img align="left" height="300em" width="250em" src="./screenshots/characters_screen.png" alt="characters-screen">
 
 - The characters screen shows a list of the characters of the tv-show.
 - Search field to search for a specific character.
@@ -115,7 +114,7 @@ ui/
 
 #### Episodes Screen
 
-<img align="left" height="250em" width="250em" src="./screenshots/episodes_screen.png" alt="episodes-screen">
+<img align="left" height="3000em" width="250em" src="./screenshots/episodes_screen.png" alt="episodes-screen">
 
 - The episodes screen shows a list of the episodes of the tv-show. (Available to the Second Season)
 - "Coming soon": Each episode card redirects to a full info view of the same character. (To implemented)
