@@ -30,11 +30,13 @@ Doctor summary (to see all details, run flutter doctor -v):
 ### Home Screen
 
 ![Screenshots on Android]<img align="right" src="./screenshots/home_screen.png" alt="home-screen">
-Flutter provides a lot of flexibility in deciding how to organize and architect
+<p align="left" alt="home-screen-content">
+  Flutter provides a lot of flexibility in deciding how to organize and architect
 your apps. While this freedom is very valuable, it can also lead to apps with
 large classes, inconsistent naming schemes, as well as mismatching or missing
 architectures. These types of issues can make testing, maintaining, and extending
 your apps difficult.
+</p>
 
 
 ### Character Screen
