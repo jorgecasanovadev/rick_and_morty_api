@@ -1,10 +1,10 @@
 # Rick and Morty - API
 
-> ### Getting Started
+> ## Getting Started
 
 The Boilerplate contains the minimal implementation required to create a new library or project. The repository code is preloaded with some basic components like basic app architecture, app theme, constants and required dependencies to create a new project. By using boiler plate code as standard initializer, we can have same patterns in all the projects that will inherit it. This will also help in reducing setup & development time by allowing you to use the same code pattern and avoid re-writing from scratch.
 
-> ## How to Use 
+> ### How to Use 
 
 **Step 1:**
 - Download or clone this repo by using the link below:
@@ -27,7 +27,7 @@ flutter pub get
 flutter packages pub run build_runner build --delete-conflicting-outputs
 ```
 
-> ## SDK Version
+> ### SDK Version
 ```dart
 jorgecasanova ~ % flutter --version
 Flutter 3.10.5 • channel stable • https://github.com/flutter/flutter.git
@@ -49,8 +49,8 @@ Doctor summary (to see all details, run flutter doctor -v):
 • No issues found!
 ```
 
-> ## Screenshot Screens
-### Home Screen
+> ### Screenshot Screens
+#### Home Screen
 
 <img align="right" src="./screenshots/home_screen.png" alt="home-screen">
 <p align="left" alt="home-screen-content">
@@ -62,7 +62,7 @@ your apps difficult.
 </p>
 <br>
 
-### Character Screen
+#### Character Screen
 
 <img align="right" src="./screenshots/characters_screen.png" alt="characters-screen">
 <p align="left" alt="characters-screen-content">
@@ -75,7 +75,7 @@ your apps difficult.
 <br>
 
 
-### Episodes Screen
+#### Episodes Screen
 
 <img align="right" src="./screenshots/episodes_screen.png" alt="characters-screen">
 <p align="left" alt="episodes-screen-content">
