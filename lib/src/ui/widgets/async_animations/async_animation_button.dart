@@ -4,9 +4,9 @@ import '../../themes/themes.dart';
 
 class AnimatedSync extends AnimatedWidget {
   const AnimatedSync({
-    super.key,
     required this.animation,
     required this.callback,
+    super.key,
   }) : super(listenable: animation);
   final VoidCallback callback;
   final Animation<double> animation;
@@ -54,7 +54,7 @@ class AnimatedSync extends AnimatedWidget {
 }
 
 class AnimationSync extends StatefulWidget {
-  const AnimationSync({super.key, required this.onPress});
+  const AnimationSync({required this.onPress, super.key});
   final void Function(AnimationController controller) onPress;
 
   @override
@@ -90,7 +90,7 @@ class AnimationSyncState extends State<AnimationSync>
     return AnimatedSync(
       animation: rotateAnimation,
       callback: () async {
-        controller.forward();
+        await controller.forward();
         widget.onPress(controller);
         // await syncDatabaseFull();
         // controller.stop();

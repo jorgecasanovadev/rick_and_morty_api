@@ -22,13 +22,12 @@ analyzer:
     avoid_slow_async_io: ignore
 
   exclude:
-    - lib/src/data/models/*.dart
-    - lib/src/data/models/utils/*.dart
-    - lib/src/data/network/*.dart
-    - lib/main.reflectable.dart
-    #- lib/src/ui/screens/pre_register_producer/sync_pre_register_producer_screen.dart
-    - lib/src/configurations/routes.gr.dart
-    - test/widget_test.reflectable.dart
+    # - lib/src/data/models/*.dart
+    # - lib/src/data/models/utils/*.dart
+    # - lib/src/data/network/*.dart
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - lib/src/configurations/routes_import.gr.dart
 
   strong-mode:
 
