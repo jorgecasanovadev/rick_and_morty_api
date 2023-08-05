@@ -13,13 +13,13 @@ We work using the API [The Rick and Morty API](https://rickandmortyapi.com/); us
 
 > ### SDK Version
 ```dart
-jorgecasanova ~ % flutter --version
+~ % flutter --version
 Flutter 3.10.5 • channel stable • https://github.com/flutter/flutter.git
 Framework • revision 796c8ef792 (8 weeks ago) • 2023-06-13 15:51:02 -0700
 Engine • revision 45f6e00911
 Tools • Dart 3.0.5 • DevTools 2.23.1
 
-jorgecasanova ~ % flutter doctor
+~ % flutter doctor
 Doctor summary (to see all details, run flutter doctor -v):
 [✓] Flutter (Channel stable, 3.10.5, on macOS 13.5 22G74 darwin-arm64, locale en-US)
 [✓] Android toolchain - develop for Android devices (Android SDK version 34.0.0)
