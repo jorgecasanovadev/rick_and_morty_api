@@ -75,7 +75,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
           Padding(
             padding: const EdgeInsets.all(20),
             child: CustomTextField(
-              title: 'Buscardor',
+              title: 'Buscador',
               controller: _textSerchCharactController,
             ),
           ),
