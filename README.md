@@ -6,22 +6,23 @@ The Boilerplate contains the minimal implementation required to create a new lib
 
 > ### How to Use 
 
-**Step 1:**
+**Step 1: 🧑🏻‍💻**
 - Download or clone this repo by using the link below:
+SSH:
 ```
-SSH: git@github.com:jorgecasanovadev/rick_and_morty_api.git
-HTTPS: https://github.com/jorgecasanovadev/rick_and_morty_api.git
+git@github.com:jorgecasanovadev/rick_and_morty_api.git
 ```
-
-**Step 2:**
+HTTPS:
+```
+https://github.com/jorgecasanovadev/rick_and_morty_api.git
+```
+**Step 2: 🤓**
 - Go to the project root and execute the following command in the console to get the required dependencies: 
-🧙🏼‍♂️
 ```
 flutter clean
 flutter pub get 
 ```
-
-**Step 3:**
+**Step 3: 🧙🏼‍♂️**
 - This project works with code generation, execute the following command to generate files:
 ```
 flutter packages pub run build_runner build --delete-conflicting-outputs
