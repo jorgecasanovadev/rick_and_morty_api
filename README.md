@@ -90,9 +90,9 @@ ui/
 
 <img align="left" height="250em" width="250em" src="./screenshots/characters_screen.png" alt="characters-screen">
 
-- The characters screen of the app shows a list of the characters of the tv-show.
+- The characters screen shows a list of the characters of the tv-show.
 - Search field to search for a specific character.
-- Each character card redirect to a full info view of the same character.
+- Each character card redirects to a full info view screen of the same character.
 ```
 ui/
 |- modules/
@@ -104,23 +104,36 @@ ui/
       |- model/
          |- character_model.dart
       |- views/
+         |- character_card.dart
          |- character_view.dart
       |- characters_screen.dart
 ```
 <hr align"center">
+<br>
 
 
 #### Episodes Screen
 
-<img align="right" src="./screenshots/episodes_screen.png" alt="characters-screen">
-<p align="left" alt="episodes-screen-content">
-  Flutter provides a lot of flexibility in deciding how to organize and architect
-your apps. While this freedom is very valuable, it can also lead to apps with
-large classes, inconsistent naming schemes, as well as mismatching or missing
-architectures. These types of issues can make testing, maintaining, and extending
-your apps difficult.
-</p>
+<img align="left" height="250em" width="250em" src="./screenshots/episodes_screen.png" alt="episodes-screen">
+
+- The episodes screen shows a list of the episodes of the tv-show. (Available to the Second Season)
+- "Coming soon": Each episode card redirects to a full info view of the same character. (To implemented)
+```
+ui/
+|- modules/
+   |- episodes/
+      |- bloc/
+         |- episode_bloc.dart
+         |- episode_event.dart
+         |- episode_state.dart
+      |- model/
+         |- episode_model.dart
+      |- views/
+         |- episode_card.dart
+      |- characters_screen.dart
+```
 <hr align"center">
+<br>
 
 
 This project is a starting point for a Flutter application.
