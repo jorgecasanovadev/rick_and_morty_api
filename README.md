@@ -4,12 +4,6 @@ A new Flutter project.
 
 ## Getting Started
 
-<p float="left">
-  <img src="https://i.imgur.com/TqARMD2"/>
-  <img src="https://i.imgur.com/zfbrPu5"/>
-  <img src="https://i.imgur.com/llRUnBx"/>
-</p>
-
 
 > SDK Version
 ```java
