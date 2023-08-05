@@ -85,8 +85,9 @@ ui/
 <br>
 <br>
 <br>
-<hr align"center">
 <br>
+<br>
+<hr align"center">
 
 
 #### Character Screen
@@ -112,7 +113,6 @@ ui/
       |- characters_screen.dart
 ```
 <hr align"center">
-<br>
 
 
 #### Episodes Screen
