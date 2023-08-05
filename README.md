@@ -56,6 +56,17 @@ flutter packages pub run build_runner build --delete-conflicting-outputs
 <hr align"center">
 
 
+> ### Libraries & Tools Used
+
+* [Dio](https://github.com/flutterchina/dio) (HTTPs requests)
+* [Bloc](https://pub.dev/packages/bloc) (State management)
+* [Flutter_Bloc](https://pub.dev/packages/flutter_bloc) (Connect reactive data with the UI)
+* [Flutter_Logs](https://pub.dev/packages/flutter_logs) (Capture and management of logs)
+* [Auto_Route](https://pub.dev/packages/auto_route) (Declarative routing solution)
+* [Freezed](https://pub.dev/packages/freezed) (Code generation for immutable classes)
+* [Json Serialization](https://pub.dev/packages/json_serializable) (Automatically generate code converting JSON)
+* [Easy_Localization](https://pub.dev/packages/easy_localization) (Easy and fast internationalizing and localization)
+
 > ### Screenshot Screens
 #### Home Screen
 
