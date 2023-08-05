@@ -29,7 +29,7 @@ Doctor summary (to see all details, run flutter doctor -v):
 > ## Screenshot Screens
 ### Home Screen
 
-![Screenshots on Android]<img align="right" src="./screenshots/home_screen.png" alt="home-screen">
+<img align="right" src="./screenshots/home_screen.png" alt="home-screen">
 <p align="left" alt="home-screen-content">
   Flutter provides a lot of flexibility in deciding how to organize and architect
 your apps. While this freedom is very valuable, it can also lead to apps with
@@ -41,22 +41,26 @@ your apps difficult.
 
 ### Character Screen
 
-![Screenshots on Android]<img align="right" src="./screenshots/characters_screen.png" alt="characters-screen">
-Flutter provides a lot of flexibility in deciding how to organize and architect
+<img align="right" src="./screenshots/characters_screen.png" alt="characters-screen">
+<p align="left" alt="characters-screen-content">
+  Flutter provides a lot of flexibility in deciding how to organize and architect
 your apps. While this freedom is very valuable, it can also lead to apps with
 large classes, inconsistent naming schemes, as well as mismatching or missing
 architectures. These types of issues can make testing, maintaining, and extending
 your apps difficult.
+</p>
 
 
 ### Episodes Screen
 
-![Screenshots on Android]<img align="right" src="./screenshots/episodes_screen.png" alt="characters-screen">
-Flutter provides a lot of flexibility in deciding how to organize and architect
+<img align="right" src="./screenshots/episodes_screen.png" alt="characters-screen">
+<p align="left" alt="episodes-screen-content">
+  Flutter provides a lot of flexibility in deciding how to organize and architect
 your apps. While this freedom is very valuable, it can also lead to apps with
 large classes, inconsistent naming schemes, as well as mismatching or missing
 architectures. These types of issues can make testing, maintaining, and extending
 your apps difficult.
+</p>
 
 This project is a starting point for a Flutter application.
 
