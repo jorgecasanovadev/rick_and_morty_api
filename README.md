@@ -82,6 +82,7 @@ ui/
    |- home/
       |- home_screen.dart
 ```
+<br>
 <hr align"center">
 <br>
 
@@ -108,13 +109,14 @@ ui/
          |- character_view.dart
       |- characters_screen.dart
 ```
+<br>
 <hr align"center">
 <br>
 
 
 #### Episodes Screen
 
-<img align="left" height="3000em" width="250em" src="./screenshots/episodes_screen.png" alt="episodes-screen">
+<img align="left" height="300em" width="250em" src="./screenshots/episodes_screen.png" alt="episodes-screen">
 
 - The episodes screen shows a list of the episodes of the tv-show. (Available to the Second Season)
 - "Coming soon": Each episode card redirects to a full info view of the same character. (To implemented)
@@ -132,6 +134,7 @@ ui/
          |- episode_card.dart
       |- characters_screen.dart
 ```
+<br>
 <hr align"center">
 <br>
 
