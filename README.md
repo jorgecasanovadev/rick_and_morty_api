@@ -81,7 +81,7 @@ ui/
    |- home/
       |- home_screen.dart
 ```
-<img align="center" height="100em" width="100em" src="./screenshots/home_screen.png" alt="home-screen">
+<img align="right" height="200em" width="200em" src="./screenshots/home_screen.png" alt="home-screen">
 
 <hr align"center">
 
