@@ -1,8 +1,31 @@
 # Rick and Morty - API
 
-A new Flutter project.
+> ### Getting Started
 
-## Getting Started
+The Boilerplate contains the minimal implementation required to create a new library or project. The repository code is preloaded with some basic components like basic app architecture, app theme, constants and required dependencies to create a new project. By using boiler plate code as standard initializer, we can have same patterns in all the projects that will inherit it. This will also help in reducing setup & development time by allowing you to use the same code pattern and avoid re-writing from scratch.
+
+> ## How to Use 
+
+**Step 1:**
+- Download or clone this repo by using the link below:
+```
+SSH: git@github.com:jorgecasanovadev/rick_and_morty_api.git
+HTTPS: https://github.com/jorgecasanovadev/rick_and_morty_api.git
+```
+
+**Step 2:**
+- Go to the project root and execute the following command in the console to get the required dependencies: 
+🧙🏼‍♂️
+```
+flutter clean
+flutter pub get 
+```
+
+**Step 3:**
+- This project works with code generation, execute the following command to generate files:
+```
+flutter packages pub run build_runner build --delete-conflicting-outputs
+```
 
 > ## SDK Version
 ```dart
