@@ -73,10 +73,9 @@ flutter packages pub run build_runner build --delete-conflicting-outputs
 #### Home Screen
 
 <img align="right" src="./screenshots/home_screen.png" alt="home-screen">
-<p align="left" alt="home-screen-content">
-  - This is the first screen inside of the app.
-  - Redirected to Characters-Screen and Episodes-Screen.
-</p>
+- This is the first screen inside of the app.
+- Redirected to Characters-Screen and Episodes-Screen.
+
 ```
 ui/
 |- modules
