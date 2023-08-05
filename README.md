@@ -4,6 +4,7 @@ The Boilerplate contains the minimal implementation required to create a new lib
 > ## Getting Started
 - [SDK Verion](https://github.com/jorgecasanovadev/rick_and_morty_api#sdk-version): SDK version
 - [How to use](https://github.com/jorgecasanovadev/rick_and_morty_api/tree/main#how-to-use): Initialize Rick and Morty API
+- [Libraries and Tools](https://github.com/jorgecasanovadev/rick_and_morty_api#libraries--tools-used): Libraries and tools used
 - [Screenshots](https://github.com/jorgecasanovadev/rick_and_morty_api/tree/main#how-to-use): Screenshots of the app views
 
 
@@ -66,6 +67,7 @@ flutter packages pub run build_runner build --delete-conflicting-outputs
 * [Freezed](https://pub.dev/packages/freezed) (Code generation for immutable classes)
 * [Json Serialization](https://pub.dev/packages/json_serializable) (Automatically generate code converting JSON)
 * [Easy_Localization](https://pub.dev/packages/easy_localization) (Easy and fast internationalizing and localization)
+<hr align"center">
 
 > ### Screenshot Screens
 #### Home Screen
