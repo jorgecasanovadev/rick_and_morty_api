@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:choppi_test/src/data/blocs/internet_connection/internet_connection_bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_logs/flutter_logs.dart';
@@ -13,7 +14,8 @@ part 'character_event.dart';
 part 'character_state.dart';
 
 class CharacterBloc extends Bloc<CharacterEvent, CharacterState> {
-  CharacterBloc() : super(const CharacterState()) {
+  CharacterBloc({required this.internetConnectionBloc})
+      : super(const CharacterState()) {
     on<CharacterEvent>((event, emit) {});
 
     on<OnToggleLoadingCharacterEvent>((event, emit) {
@@ -46,6 +48,7 @@ class CharacterBloc extends Bloc<CharacterEvent, CharacterState> {
   }
 
   final apiRemote = CharacterRemoteRepository();
+  InternetConnectionBloc internetConnectionBloc;
 
   Future<void> filterCharacters(
     OnFilterCharacterEvent event,
@@ -85,14 +88,14 @@ class CharacterBloc extends Bloc<CharacterEvent, CharacterState> {
     add(const OnToggleLoadingCharacterEvent(isCharactersLoading: true));
     final characters = <CharacterModel>[];
     try {
-      // if (internetConnectionBloc.state.isActive) {
-      characters.addAll(await apiRemote.getCharacters());
-      add(OnLoadCharacterEvent(characters: characters));
-      // } else {
-      // unawaited(
-      // ToastMessages.showError('No cuenta con conexión a internet'),
-      // );
-      // }
+      if (internetConnectionBloc.state.isActive) {
+        characters.addAll(await apiRemote.getCharacters());
+        add(OnLoadCharacterEvent(characters: characters));
+      } else {
+        unawaited(
+          ToastMessages.showError('No cuenta con conexión a internet'),
+        );
+      }
     } on Failure catch (e) {
       unawaited(
         FlutterLogs.logThis(
