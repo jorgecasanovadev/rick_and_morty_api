@@ -1,3 +1,4 @@
+import 'package:choppi_test/src/data/blocs/internet_connection/internet_connection_bloc.dart';
 import 'package:choppi_test/src/ui/modules/characters/bloc/character_bloc.dart';
 import 'package:choppi_test/src/ui/modules/episodes/bloc/episode_bloc.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -21,10 +22,16 @@ void main() async {
     MultiBlocProvider(
       providers: [
         BlocProvider(
+          create: (_) => InternetConnectionBloc(),
+        ),
+        BlocProvider(
           create: (_) => LoggerBloc(),
         ),
         BlocProvider(
-          create: (_) => CharacterBloc(),
+          create: (context) => CharacterBloc(
+            internetConnectionBloc:
+                BlocProvider.of<InternetConnectionBloc>(context),
+          ),
         ),
         BlocProvider(
           create: (_) => EpisodeBloc(),

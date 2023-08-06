@@ -52,6 +52,7 @@ dependencies:
   json_annotation: ^4.8.1
   provider: ^6.0.5
   font_awesome_flutter: ^10.5.0
+  internet_connection_checker: ^1.0.0+1
 
 dev_dependencies:
   auto_route_generator: ^7.2.0
