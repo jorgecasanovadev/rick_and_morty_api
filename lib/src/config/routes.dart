@@ -9,7 +9,7 @@ class Routes extends $Routes {
   final List<AutoRoute> routes = [
     CustomRoute(
       page: HomeScreenRoute.page,
-      path: '/',
+      path: '/home',
       transitionsBuilder: TransitionsBuilders.fadeIn,
     ),
     CustomRoute(

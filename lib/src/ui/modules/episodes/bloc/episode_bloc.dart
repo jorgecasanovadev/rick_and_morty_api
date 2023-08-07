@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:choppi_test/src/data/blocs/internet_connection/internet_connection_bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_logs/flutter_logs.dart';
@@ -13,7 +14,8 @@ part 'episode_event.dart';
 part 'episode_state.dart';
 
 class EpisodeBloc extends Bloc<EpisodeEvent, EpisodeState> {
-  EpisodeBloc() : super(const EpisodeState()) {
+  EpisodeBloc({required this.internetConnectionBloc})
+      : super(const EpisodeState()) {
     on<EpisodeEvent>((event, emit) {});
 
     on<OnToggleLoadingEpisodeEvent>((event, emit) {
@@ -43,19 +45,20 @@ class EpisodeBloc extends Bloc<EpisodeEvent, EpisodeState> {
   }
 
   final apiRemote = EpisodeRemoteRepository();
+  final InternetConnectionBloc internetConnectionBloc;
 
   Future<void> loadEpisodes() async {
     add(const OnToggleLoadingEpisodeEvent(isEpisodesLoading: true));
     final episodes = <EpisodeModel>[];
     try {
-      // if (internetConnectionBloc.state.isActive) {
-      episodes.addAll(await apiRemote.getEpisodes());
-      add(OnLoadEpisodeEvent(episodes: episodes));
-      // } else {
-      // unawaited(
-      // ToastMessages.showError('No cuenta con conexión a internet'),
-      // );
-      // }
+      if (internetConnectionBloc.state.isActive) {
+        episodes.addAll(await apiRemote.getEpisodes());
+        add(OnLoadEpisodeEvent(episodes: episodes));
+      } else {
+        unawaited(
+          ToastMessages.showError('No cuenta con conexión a internet'),
+        );
+      }
     } on Failure catch (e) {
       unawaited(
         FlutterLogs.logThis(
