@@ -10,16 +10,16 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i6;
 import 'package:choppi_test/src/ui/modules/characters/characters_screen.dart'
-    as _i3;
+    as _i4;
 import 'package:choppi_test/src/ui/modules/characters/model/character_model.dart'
     as _i7;
 import 'package:choppi_test/src/ui/modules/characters/views/character_view.dart'
-    as _i4;
+    as _i5;
 import 'package:choppi_test/src/ui/modules/episodes/episodes_screen.dart'
     as _i2;
 import 'package:choppi_test/src/ui/modules/home/home_screen.dart' as _i1;
 import 'package:choppi_test/src/ui/modules/locations/location_screen.dart'
-    as _i5;
+    as _i3;
 import 'package:flutter/material.dart' as _i8;
 
 abstract class $Routes extends _i6.RootStackRouter {
@@ -39,26 +39,26 @@ abstract class $Routes extends _i6.RootStackRouter {
         child: const _i2.EpisodesScreen(),
       );
     },
+    LocationScreenRoute.name: (routeData) {
+      return _i6.AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const _i3.LocationScreen(),
+      );
+    },
     CharactersScreenRoute.name: (routeData) {
       return _i6.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i3.CharactersScreen(),
+        child: const _i4.CharactersScreen(),
       );
     },
     CharacterViewRoute.name: (routeData) {
       final args = routeData.argsAs<CharacterViewRouteArgs>();
       return _i6.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: _i4.CharacterView(
+        child: _i5.CharacterView(
           character: args.character,
           key: args.key,
         ),
-      );
-    },
-    LocationScreenRoute.name: (routeData) {
-      return _i6.AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const _i5.LocationScreen(),
       );
     },
   };
@@ -93,7 +93,21 @@ class EpisodesScreenRoute extends _i6.PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [_i3.CharactersScreen]
+/// [_i3.LocationScreen]
+class LocationScreenRoute extends _i6.PageRouteInfo<void> {
+  const LocationScreenRoute({List<_i6.PageRouteInfo>? children})
+      : super(
+          LocationScreenRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'LocationScreenRoute';
+
+  static const _i6.PageInfo<void> page = _i6.PageInfo<void>(name);
+}
+
+/// generated route for
+/// [_i4.CharactersScreen]
 class CharactersScreenRoute extends _i6.PageRouteInfo<void> {
   const CharactersScreenRoute({List<_i6.PageRouteInfo>? children})
       : super(
@@ -107,7 +121,7 @@ class CharactersScreenRoute extends _i6.PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [_i4.CharacterView]
+/// [_i5.CharacterView]
 class CharacterViewRoute extends _i6.PageRouteInfo<CharacterViewRouteArgs> {
   CharacterViewRoute({
     required _i7.CharacterModel character,
@@ -142,18 +156,4 @@ class CharacterViewRouteArgs {
   String toString() {
     return 'CharacterViewRouteArgs{character: $character, key: $key}';
   }
-}
-
-/// generated route for
-/// [_i5.LocationScreen]
-class LocationScreenRoute extends _i6.PageRouteInfo<void> {
-  const LocationScreenRoute({List<_i6.PageRouteInfo>? children})
-      : super(
-          LocationScreenRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'LocationScreenRoute';
-
-  static const _i6.PageInfo<void> page = _i6.PageInfo<void>(name);
 }

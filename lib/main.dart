@@ -1,4 +1,4 @@
-import 'package:choppi_test/src/data/blocs/internet_connection/internet_connection_bloc.dart';
+import 'package:choppi_test/src/data/blocs/session/session_bloc.dart';
 import 'package:choppi_test/src/ui/modules/characters/bloc/character_bloc.dart';
 import 'package:choppi_test/src/ui/modules/episodes/bloc/episode_bloc.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -25,6 +25,12 @@ void main() async {
           create: (_) => InternetConnectionBloc(),
         ),
         BlocProvider(
+          create: (context) => SessionBloc(
+            internetConnectionBloc:
+                BlocProvider.of<InternetConnectionBloc>(context),
+          ),
+        ),
+        BlocProvider(
           create: (_) => LoggerBloc(),
         ),
         BlocProvider(
@@ -34,7 +40,10 @@ void main() async {
           ),
         ),
         BlocProvider(
-          create: (_) => EpisodeBloc(),
+          create: (context) => EpisodeBloc(
+            internetConnectionBloc:
+                BlocProvider.of<InternetConnectionBloc>(context),
+          ),
         ),
       ],
       child: EasyLocalization(
